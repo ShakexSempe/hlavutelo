@@ -1,0 +1,182 @@
+.services {
+    * {
+        // border: 1px solid #000a;
+
+    }
+    .services-container {
+        // border: 2px solid blue;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        @include md {
+            flex-direction: row;
+        }
+
+        .service-item {
+            // border: 1px solid red;
+            // background: #f4f4f4;
+            // border-bottom: 2px solid $overlay-blue-light;
+            position: relative;
+            flex-basis: 50%;
+            margin: 1rem 0;
+            color: $overlay-blue-dark;
+            @include md {
+                background:linear-gradient(0deg, #f4f4f4, #fff);
+                border-radius: $border-radius-md;
+                border: 1px solid rgba(72, 85, 99, .15);
+                box-shadow: 0rem .25rem .35rem rgba(72, 85, 99, .15);
+                padding: .5rem;
+                text-align: center;
+            }
+
+            .service-header {
+                .service-logo {
+                    margin-bottom: .5rem;
+                    // border: 1px solid green;
+                    width: 5rem;
+                    height: 5rem;
+                    overflow: hidden;
+                    @include md {
+                        margin: 1rem auto;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .service-title {
+                    // border: 1px solid #000a;
+                    font-family: $font-title;
+
+                    h2 {
+                        text-transform: capitalize;
+                        font-size: 1.5rem;
+                        line-height: 1.2;
+                        margin: 1rem 0 0;
+                    }
+
+                    p {
+                        color: $overlay-blue-light;
+                    }
+
+                }
+            }
+
+            .service-content {
+                p {
+                    margin: 1rem 0;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    font-weight: 500;
+                    color: #fff;
+                    background: $overlay-blue-dark;
+                    padding: .5rem;
+                    border-radius: $border-radius-sm;
+                    height: auto;
+
+                    // INCLUDE HEIGHT TO LEVEL UL
+                    @include md {
+                        height: 20vh;
+                        display: grid;
+                        place-items: center;
+                    }
+                    @include xlg {
+                        height: 15vh;
+                    }
+                }
+
+                ol {
+                    margin: .5rem;
+                    // border: 2px solid yellow;
+                    // background: $overlay-blue-dark;
+                    padding: 0 .5rem;
+
+                    li {
+                        padding: .25rem;
+                        text-transform: capitalize;
+                        border-radius: $border-radius-sm;
+                        // color: #f4f4f4;
+                        &::marker {
+                            color: #000a;
+                        }
+                        &:nth-child(odd) {
+                            background-color: rgba(72, 85, 99, 0.050);
+                        }
+                    }
+                }
+            }
+
+            // IO CLASS 
+            &.io-item {
+                .service-logo {
+                    transform: translateX(1rem);
+                    opacity: 0;
+                    transition: 1s;
+                }
+                .service-title {
+                    h2 {
+                        opacity: 0;
+                        transform: translateX(1rem);
+                        transition: 1s;
+                        transition-delay: .5s;
+                    }
+                    p {
+                        transform: translateX(1.25rem);
+                        opacity: 0;
+                        transition: 1s;
+                        transition-delay: .8s;
+                    }
+
+                }
+                .service-content {
+                    p {
+                        opacity: 0;
+                        transition: 1.5s;
+                        transition-delay: 1s;
+                    }
+
+                    ol {
+                        li {
+                            transform: translateX(1.5rem);
+                            opacity: 0;
+                            
+                        }
+                    }
+                }
+            }
+
+            &.active-item {
+                .service-logo {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                .service-title {
+                    h2 {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                    p {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                }
+                .service-content {
+                    p {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                    ol {
+                        li {
+                            transform: translateX(0);
+                            opacity: 1;
+                            transition: 1s;
+                            transition-delay: calc(1s + .25s * var(--i));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

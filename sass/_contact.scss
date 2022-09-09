@@ -1,0 +1,284 @@
+.contact {
+    .contact-container {
+        // border: 2px solid blue;
+        margin-top: 5vh;
+        background: $overlay;
+        border-radius: $border-radius-sm;
+        padding: 1rem 0;
+        @include md {
+            // border: 2px solid red;
+            margin-top: 10vh;
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            // background: none;
+        }
+        .contact-item {
+            // border-bottom: $border-light-sm;
+            margin-bottom: .5rem;
+            padding: 1rem .5rem;
+            // background: $overlay;
+            // box-shadow: $box-shadow;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            @include md {
+                flex-grow: 1;
+                border-radius: $border-radius-sm;
+                border-color: $overlay-blue-dark;
+                padding: 1rem .5rem;
+                padding: 0 1rem;
+                margin-bottom: 0;
+                // background: $overlay;
+            }
+
+            .contact-icon {
+                // border: 2px solid yellow;
+                width: 2.5rem;
+                overflow: hidden;
+
+                i {
+                    font-size: 1.5rem;
+                    color: $brand;
+                }
+            }
+
+            .contact-info {
+                // border: 2px solid green;
+                // padding-left: 2rem;
+
+                h2 {
+                    font-size: 1.25rem;
+                    text-transform: capitalize;
+                    font-family: $font-title;
+                    font-weight: 400;
+                    color: $brand;
+                    margin-bottom: .25rem;
+
+                    @include md {
+                        // font-size: 1.5rem;
+                    }
+                }
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $overlay-blue-darker;
+                    color: $text-light;
+                    letter-spacing: .05rem;
+                    position: relative;
+
+                    // PSEUDO UNDERLINE
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -.05rem;
+                        left: 0;
+                        width: 100%;
+                        height: .05rem;
+                        background-color: $brand;
+                    }
+                }
+            }
+
+            // IO CLASS 
+            &.io-item {
+                .contact-icon {
+                    i {
+                        transform: scale(.5);
+                        transition: 1s;
+                    }
+                }
+
+                .contact-info {
+                    h2 {
+                        color: $text-light;
+                        transition: .5s .5s;
+                    }
+
+                    a {
+                        transform: translateX(1rem);
+                        transition: 1s;
+
+                        &::after {
+                            transform: scale(0);
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+
+            // IO ACTIVE CLASS 
+            &.active-item {
+                .contact-icon {
+                    i {
+                        transform: scale(1);
+                        opacity: .7;
+
+                    }
+                }
+
+                .contact-info {
+                    h2 {
+                        color: $brand;
+                    }
+
+                    a {
+                        transform: translateX(0);
+                    }
+                }
+
+                &:hover {
+                    .contact-icon {
+                        i {
+                            opacity: .9;
+                            transition: .25s;
+                        }
+                    }
+
+                    .contact-info {
+                        h2 {
+                            opacity: .7;
+                            transition: .25s;
+                        }
+
+                        a {
+                            &::after {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-form {
+        // border: 2px solid red;
+        margin-top: 5vh;
+        form {
+            @media (max-width: 768px){
+                min-height: 100vh;
+            }
+            padding: 5vh 0;
+            .form-title {
+                margin-bottom: 1rem;
+                // border: 1px solid red;
+                color: $overlay-blue-dark;
+
+                h1 {
+                    text-transform: capitalize;
+                    font-family: $font-title;
+                    font-size: 1.8rem;
+                    // margin-bottom: .25rem;
+                    @include md {
+                        font-size: 2rem;
+                    }
+                }
+
+                p {
+                    font-weight: 500;
+                }
+            }
+            fieldset {
+                margin: 2rem 0 0;
+                border: none;
+            }
+            label {
+                display: block;
+                text-transform: capitalize;
+                // border: 2px solid blue;
+                margin-bottom: .5rem;
+                color: $overlay-blue-darker;
+                font-weight: 400;
+                font-family: $font-title;
+
+                input, textarea {
+                    display: block;
+                    border-radius: .25rem;
+                    padding: .5rem ;
+                    width: 100%;
+                    border-color: $overlay-blue-light;
+                    resize: none;
+                    margin-top: .25rem;
+                    font-family: $font-content;
+
+                    &::placeholder {
+                        opacity: .5;
+                        letter-spacing: .05rem;
+                        transition: .25s;
+                    }
+
+                    &:focus {
+                        &::placeholder {
+                            opacity: 1;
+                            letter-spacing: normal;
+                        }
+                    }
+                    @include md {
+                        &:hover {
+                            &::placeholder {
+                                opacity: 1;
+                                letter-spacing: normal;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // SUBMIT BUTTON
+            .submit-btn {
+                margin-top: 1rem;
+                padding:  1rem;
+                width: 11rem;
+                text-transform: capitalize;
+                font-family: $font-content;
+                font-size: 1rem;
+                border-radius: $border-radius-sm;
+                cursor: pointer;
+                background: $btn-overlay;
+                color: $text-light;
+                border: none;
+                box-shadow: $box-shadow;
+                letter-spacing: .05rem;
+                transition: .25s;
+                text-align: left;
+                position: relative;
+
+                &:active {
+                    letter-spacing: normal;
+                    transform: scale(.97);
+                    box-shadow: $box-shadow-hover;
+                }
+            }
+
+        }
+
+
+    }
+
+    // DESKTOP FLEX
+    .contact-flex-container {
+        @include md {
+            display: flex;
+            flex-direction: row;
+            // border: 2px solid red;
+            justify-content: space-around;
+            // align-items: center;
+            gap: 5vw;
+            .contact-container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            .contact-form {
+                width: 100%;
+                // border: 2px solid red;
+
+                form {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

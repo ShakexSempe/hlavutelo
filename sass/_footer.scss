@@ -1,0 +1,24 @@
+footer {
+    min-height: 20vh;
+    width: 100%;
+    background: $overlay-dark;
+    padding: 5vh 5vw;
+    .copyright {
+        // border: 2px solid $brand;
+        border-radius: 1rem;
+        color: #fff;
+        height: 50%;
+        width: 100%;
+        padding: 1rem;
+        text-transform: capitalize;
+
+        p {
+            line-height: 1.7;
+            font-size: .85rem;
+            span{
+                display: block;
+                color: #f4f4f4;
+            }
+        }
+    }
+}

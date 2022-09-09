@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Taviraj:wght@200;300;500;600;700&display=swap');
+
+// FONTS 
+$font-title: 'Taviraj', serif ;
+$font-content:  'Montserrat',sans-serif;
+
+// TEXT-COLORS 
+$text-light: #f4f4f4;
+$text-light-trans: #bbb;
+$text-dark: #000;
+$text-dark-trans: #000a;
+
+// BRAND COLORS
+$brand: #ead2a1;
+
+// SPAN COLORS
+$span-gold: #ead2a1;
+$span-crimson: #dc143c;
+$span-crimson-dark:#b60f30;
+$span-crimson-trans: #dc143c8c;
+$span-orange: tomato;
+
+// BACKGROUND COLORS
+$background-primary: radial-gradient(hsl(0, 0%, 2%), #000);
+$background-secondary: radial-gradient(#f4f4f4, #fff);
+
+// BRAND OVERLAY
+$overlay: linear-gradient(-60deg, #29323c 0%, #485563 100%);
+$overlay: linear-gradient(60deg, #29323c 0%, #485563 100%);
+// $overlay: linear-gradient(-60deg, red 0%, blue 100%);
+$overlay-dark: linear-gradient(60deg, hsl(214, 18%, 15%), hsl(212, 19%, 25%));
+$overlay-blue-light: #485563;
+$overlay-blue-dark:#29323c;
+$overlay-blue-dark-trans:rgba(34, 41, 49, 0.9);
+$overlay-blue-darker:#20262e;
+$overlay-blue-darkest:#0a0c0f;
+
+// BUTTON COLORS
+$btn-overlay: linear-gradient(0deg, #20262e, #485563 );
+$btn-overlay-hover: linear-gradient(0deg , #485563, #20262e );
+$crimson-btn: linear-gradient(0deg, #3f0d0d, #dc134c);
+$crimson-btn-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
+$button-gold: linear-gradient(0deg, hsl(40, 63%, 60%), hsl(40, 63%, 70%));
+$button-gold-hover: linear-gradient(0deg, hsl(40, 63%, 70%), hsl(40, 63%, 60%));
+$btn-brand: linear-gradient(90deg, hsl(40, 63%, 50%), hsl(40, 63%, 60%));
+$btn-brand: linear-gradient( 90deg, #0a0c0f, $overlay-blue-darker);
+$btn-brand-light: linear-gradient( 90deg, $overlay-blue-darkest, $overlay-blue-light);
+$btn-brand-light-hover: linear-gradient( 90deg, $overlay-blue-light, $overlay-blue-darkest);
+$btn-brand-hover: linear-gradient( -90deg, hsl(40, 63%, 60%) 20%, hsl(40, 63%, 50%));
+$btn-brand-hover: linear-gradient( -90deg, hsl(214, 18%, 0%) 20%, $overlay-blue-darker);
+
+// BORDER-RADIUS
+$border-radius-xsm: .25rem;
+$border-radius-sm: .5rem;
+$border-radius-md: 1rem;
+$border-radius-lg: 2rem;
+$border-light-sm: .105rem solid rgba(255, 255, 255, .2);
+$border-dark-sm: .105rem solid rgba(0, 0, 0, .7);
+$border-light-md: .15rem solid rgba(255, 255, 255, .2);
+$border-dark-md: .15rem solid rgba(0, 0, 0, .2);
+$border-brand-sm: .105rem solid rgba(234, 210, 161, .4);
+$border-brand-md: .15rem solid rgba(234, 210, 161, 1);
+// BOX SHADOWS
+$box-shadow: inset 2px 2px 2px rgba(225, 225, 225, 0.300),
+                    inset -2px -2px 3px rgba(0, 0, 0, .350),
+                    4px 4px 2px rgba(0, 0, 0, .150);
+
+$box-shadow-hover: inset 2px 2px 2px rgba(0, 0, 0, .250),
+                    inset -2px -2px 2px rgba(221, 221, 221, 0.250),
+                    0px 4px 1px rgba(0, 0, 0, .150);
+
+// BREAK POINTS
+$screen-xsm-max: 390px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 820px;
+$screen-xlg-min: 1024px;

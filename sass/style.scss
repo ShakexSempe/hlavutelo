@@ -1,0 +1,103 @@
+@import 'variables';
+@import 'utilities';
+@import 'header';
+@import 'hero';
+@import 'services';
+@import 'contact';
+@import 'mixin';
+@import 'work';
+@import 'about';
+@import 'footer';
+*, ::before, ::after {
+    // border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // scroll-padding-top: 7vh;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    position: relative;
+    font-family: $font-content;
+}
+
+.container {
+    // border: 2px solid #fff000;
+    // overflow-x: hidden;
+    width: 100%;
+    min-height: 200vh;
+    position: relative;
+    // SIDEBAR OVERLAY
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        width: 100%;
+        height: 100%;
+        background: #000a;
+    }
+
+    // ACTIVE SIDEBAR CLASS
+    &.active-container {
+        &::after {
+            left: 0;
+        }
+    }
+    main {
+        min-height: 100vh;
+        width: 100%;
+        border: 2px solid white;
+        border: none;
+
+        section {
+            min-height: 100vh;
+            width: 100%;
+            padding: 7vh 5vw;
+            background: $background-secondary;
+            // border-bottom: .15rem dashed rgba(0, 0, 0, 0.247);
+            position: relative;
+
+            .section-title {
+                // position: sticky;
+                // top: 8vh;
+                overflow: hidden;
+
+                // background: #fff;
+                @include md {
+                    top: 9vh;
+                }
+                h1 {
+                    border: $border-dark-sm;
+                    border-color: transparent;
+                    border-radius: $border-radius-sm;
+                    text-transform: capitalize;
+                    font-family: $font-title;
+                    font-size: 2rem;
+                    font-size: 3rem;
+                    color: $overlay-blue-dark;
+                    font-weight: 600;
+                    padding: 0 .5rem;
+                    width: 7rem;
+                    width: max-content;
+                    transition: .5s;
+                    @include sm {
+                        width: 10rem;
+                        font-size: 2.5rem;
+                    }
+                }
+
+                &.active-title {
+                    h1 {
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+}

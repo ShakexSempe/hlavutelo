@@ -1,0 +1,14 @@
+.hero {
+    // border: 2px solid blue;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    @include md {
+        background-size: contain;
+    }
+
+}
