@@ -4,12 +4,25 @@
     }
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/logo.png);
-    background-image: url(../img//fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 40%;
-
+    // background-image: url(../img//fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);
+    // background-image: url('https://images.unsplash.com/photo-1585643893039-bd73dd37b899?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: 40%;
+    isolation: isolate;
+    // OVERLAY 
+    // &::after {
+    //     position: absolute;
+    //     content: '';
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: linear-gradient(120deg, #000 5%, transparent 75%);
+    //     background: linear-gradient(120deg, #000 5%, transparent 75%);
+    //     z-index: -1;
+    //     opacity: 1;
+    // }
     @include md {
         // background-size: contain;
         background-image: url('https://images.unsplash.com/photo-1614127938540-a1139bee1841?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
@@ -32,7 +45,8 @@
 
     .banner {
         position: relative;
-        top: 20vh;
+        position: absolute;
+        top: 15vh;
         padding: 0 5vw;
         width: 70%;
         @include md {
@@ -42,12 +56,16 @@
         // TITLE = H1 + P
         .title {
             color: $text-dark;
+            color: $brand;
+            color: $text-light;
             h1 {
                 font-size: 2.5rem;
                 margin-bottom: .5rem;
             }
             p {
                 text-transform: capitalize;
+                color: inherit;
+                color: $text-light;
             }
             @include md {
                 // border: 1px solid #0003;

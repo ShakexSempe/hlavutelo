@@ -21,7 +21,7 @@ header {
     .logo {
         background: linear-gradient( 90deg, #000 20%, $overlay-blue-darker);
         background: $overlay-blue-light;
-        // border: $border-light-sm;
+        border: $border-brand-sm;
         padding: 0 .5rem;
         // border-radius: $border-radius-sm;
         overflow: hidden;
@@ -34,7 +34,7 @@ header {
             text-align: left;
         }
         a {
-            color: $span-gold;
+            color: $text-light;
             text-transform: capitalize;
             font-size: 1.05rem;
             text-decoration: none;
