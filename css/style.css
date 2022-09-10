@@ -497,13 +497,19 @@ header.aside-header .logo {
   color: #29323c;
 }
 .hero .banner .title h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 .hero .banner .title p {
   text-transform: capitalize;
   color: inherit;
+  line-height: 1.5;
+}
+.hero .banner .title p span {
+  display: block;
+  opacity: 0.8;
+  font-size: 0.9rem;
 }
 @media (min-width: 768px) {
   .hero .banner .title h1 {
