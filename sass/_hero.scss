@@ -4,11 +4,11 @@
     }
     width: 100%;
     min-height: 100vh;
-    // background-image: url(../img//fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);
-    // background-image: url('https://images.unsplash.com/photo-1585643893039-bd73dd37b899?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: 40%;
+    background-image: url('https://images.unsplash.com/photo-1585643893039-bd73dd37b899?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+    background-image: url(../img//fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
     isolation: isolate;
     // OVERLAY 
     // &::after {
@@ -18,10 +18,10 @@
     //     left: 0;
     //     width: 100%;
     //     height: 100%;
-    //     background: linear-gradient(120deg, #000 5%, transparent 75%);
-    //     background: linear-gradient(120deg, #000 5%, transparent 75%);
+    //     background: linear-gradient(120deg, #000, #000a);
+    //     // background: linear-gradient(120deg, #000 5%, transparent 75%);
     //     z-index: -1;
-    //     opacity: 1;
+    //     // opacity: .8;
     // }
     @include md {
         // background-size: contain;
@@ -45,8 +45,7 @@
 
     .banner {
         position: relative;
-        position: absolute;
-        top: 15vh;
+        top: 20vh;
         padding: 0 5vw;
         width: 70%;
         @include md {
@@ -55,9 +54,8 @@
         }
         // TITLE = H1 + P
         .title {
-            color: $text-dark;
             color: $brand;
-            color: $text-light;
+            color: $text-dark;
             h1 {
                 font-size: 2.5rem;
                 margin-bottom: .5rem;
@@ -65,7 +63,7 @@
             p {
                 text-transform: capitalize;
                 color: inherit;
-                color: $text-light;
+                // color: $text-light;
             }
             @include md {
                 // border: 1px solid #0003;
