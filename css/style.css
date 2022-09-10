@@ -503,7 +503,7 @@ header.aside-header .logo {
   position: relative;
   top: 20vh;
   padding: 0 5vw;
-  width: 70%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .hero .banner {
