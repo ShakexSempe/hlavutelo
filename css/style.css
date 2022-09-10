@@ -150,7 +150,7 @@
 @keyframes arrow-2 {
   50% {
     opacity: 1;
-    color: #000;
+    color: #29323c;
     color: #ead2a1;
   }
 }
@@ -210,7 +210,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   header {
@@ -221,7 +221,6 @@ header .logo {
   background: linear-gradient(90deg, #000 20%, #20262e);
   background: #485563;
   padding: 0 0.5rem;
-  border-radius: 0.5rem;
   overflow: hidden;
   width: 7rem;
   width: max-content;
@@ -401,15 +400,18 @@ header .navbar ul {
   gap: 1rem;
   list-style: none;
   padding: 0.25rem 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 header .navbar ul li {
   text-transform: capitalize;
 }
 header .navbar ul li a {
   font-family: "Taviraj", serif;
-  opacity: 0.7;
   letter-spacing: 0.025rem;
-  color: #f4f4f4;
+  color: #29323c;
   text-decoration: none;
   transition: 0.25s;
   position: relative;
@@ -440,25 +442,68 @@ header.aside-header {
 header.aside-header .logo {
   transform: translateY(0);
 }
-header.hero-header {
-  background: transparent;
+@media (min-width: 768px) {
+  header.hero-header {
+    background: transparent;
+  }
 }
-header.hero-header .logo {
-  border: 0.105rem solid rgba(255, 255, 255, 0.2);
-}
-
 .hero {
   width: 100%;
   min-height: 100vh;
   background-image: url(../img/logo.png);
+  background-image: url(../img//fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
+  background-position: 40%;
 }
 @media (min-width: 768px) {
   .hero {
-    background-size: contain;
+    background-image: url("https://images.unsplash.com/photo-1614127938540-a1139bee1841?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+    position: relative;
+    isolation: isolate;
+    background-attachment: fixed;
   }
+  .hero::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #29323c 5%, transparent 95%);
+    z-index: -1;
+    opacity: 0.2;
+  }
+}
+.hero .banner {
+  position: relative;
+  top: 20vh;
+  padding: 0 5vw;
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .hero .banner {
+    top: 20vh;
+    width: 50%;
+  }
+}
+.hero .banner .title {
+  color: #29323c;
+}
+.hero .banner .title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero .banner .title p {
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .hero .banner .title h1 {
+    font-size: 3rem;
+  }
+}
+.hero .banner .cta {
+  margin-top: 1.5rem;
 }
 
 .services .services-container {

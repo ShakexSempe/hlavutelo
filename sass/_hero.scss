@@ -1,14 +1,66 @@
 .hero {
-    // border: 2px solid blue;
+    * {
+        // border: 2px solid blue;
+    }
     width: 100%;
     min-height: 100vh;
     background-image: url(../img/logo.png);
+    background-image: url(../img//fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    background-size: cover;
+    background-position: 40%;
 
     @include md {
-        background-size: contain;
+        // background-size: contain;
+        background-image: url('https://images.unsplash.com/photo-1614127938540-a1139bee1841?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
+        position: relative;
+        isolation: isolate;
+        background-attachment: fixed;
+        // OVERLAY 
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, $overlay-blue-dark 5%, transparent 95%);
+            z-index: -1;
+            opacity: .2;
+        }
     }
 
+    .banner {
+        position: relative;
+        top: 20vh;
+        padding: 0 5vw;
+        width: 70%;
+        @include md {
+            top: 20vh;
+            width: 50%;
+        }
+        // TITLE = H1 + P
+        .title {
+            color: $text-dark;
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: .5rem;
+            }
+            p {
+                text-transform: capitalize;
+            }
+            @include md {
+                // border: 1px solid #0003;
+                // padding: .5rem;
+                // border-radius: .5rem;
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+        // CTA BUTTON
+        .cta {
+            margin-top: 1.5rem;
+        }
+    }
 }

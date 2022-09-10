@@ -16,14 +16,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: .25s;
+    transition: .5s;
 
     .logo {
         background: linear-gradient( 90deg, #000 20%, $overlay-blue-darker);
         background: $overlay-blue-light;
         // border: $border-light-sm;
         padding: 0 .5rem;
-        border-radius: $border-radius-sm;
+        // border-radius: $border-radius-sm;
         overflow: hidden;
         width: 7rem;
         width: max-content;
@@ -252,15 +252,18 @@ header {
             gap: 1rem;
             list-style: none;
             padding: .25rem .5rem;
-
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             li {
                 text-transform: capitalize;
 
                 a {
                     font-family: $font-title;
-                    opacity: .7;
+                    // opacity: .7;
                     letter-spacing: .025rem;
-                    color: $text-light;
+                    color: $text-dark;
                     text-decoration: none;
                     transition: .25s;
                     position: relative;
@@ -301,9 +304,11 @@ header {
     }
     // INTERSECTION CLASSES
     &.hero-header {
-        background: transparent;
+        @include md {
+            background: transparent;
+        }
         .logo {
-            border: $border-light-sm;
+            // border: $border-light-sm;
         }
     } 
 }
