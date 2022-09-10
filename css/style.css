@@ -498,6 +498,7 @@ header.aside-header .logo {
 }
 .hero .banner .title h1 {
   font-size: 2.5rem;
+  text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 .hero .banner .title p {
