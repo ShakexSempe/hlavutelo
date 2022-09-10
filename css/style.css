@@ -401,7 +401,7 @@ header .navbar ul {
   list-style: none;
   padding: 0.25rem 0.5rem;
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -411,7 +411,7 @@ header .navbar ul li {
 header .navbar ul li a {
   font-family: "Taviraj", serif;
   letter-spacing: 0.025rem;
-  color: #29323c;
+  color: #f4f4f4;
   text-decoration: none;
   transition: 0.25s;
   position: relative;
@@ -445,6 +445,9 @@ header.aside-header .logo {
 @media (min-width: 768px) {
   header.hero-header {
     background: transparent;
+  }
+  header.hero-header .navbar ul li a {
+    color: #29323c;
   }
 }
 .hero {

@@ -253,7 +253,7 @@ header {
             list-style: none;
             padding: .25rem .5rem;
             position: absolute;
-            top: 0;
+            top: .5rem;
             left: 50%;
             transform: translateX(-50%);
             li {
@@ -263,7 +263,7 @@ header {
                     font-family: $font-title;
                     // opacity: .7;
                     letter-spacing: .025rem;
-                    color: $text-dark;
+                    color: $text-light;
                     text-decoration: none;
                     transition: .25s;
                     position: relative;
@@ -306,6 +306,15 @@ header {
     &.hero-header {
         @include md {
             background: transparent;
+            .navbar {
+                ul {
+                    li {
+                        a {
+                        color: $text-dark;
+                        }
+                    }
+                }
+            }
         }
         .logo {
             // border: $border-light-sm;
