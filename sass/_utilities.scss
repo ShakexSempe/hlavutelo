@@ -89,12 +89,12 @@
         z-index: -1;
     }
     &::before {
-        background: $btn-brand;
+        background: $btn-brand-light;
         box-shadow: none;
         border: $border-brand-md;
     }
     &::after {
-        background: $btn-brand-hover;
+        background: $btn-brand-light-hover;
         box-shadow: none;
         opacity: 0;
         border: $border-light-md;

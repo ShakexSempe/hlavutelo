@@ -82,12 +82,12 @@
   z-index: -1;
 }
 .btn::before {
-  background: linear-gradient(90deg, #0a0c0f, #20262e);
+  background: linear-gradient(90deg, #0a0c0f, #485563);
   box-shadow: none;
   border: 0.15rem solid #ead2a1;
 }
 .btn::after {
-  background: linear-gradient(-90deg, black 20%, #20262e);
+  background: linear-gradient(90deg, #485563, #0a0c0f);
   box-shadow: none;
   opacity: 0;
   border: 0.15rem solid rgba(255, 255, 255, 0.2);
@@ -200,7 +200,7 @@
 header {
   position: fixed;
   top: 0;
-  background: #0a0c0f;
+  background: #6e706d;
   background: #29323c;
   height: 7vh;
   width: 100vw;
@@ -219,8 +219,10 @@ header {
 }
 header .logo {
   background: linear-gradient(90deg, #000 20%, #20262e);
-  background: #485563;
+  background: #6e706d;
+  background: #20262e;
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
+  border: 0.15rem solid rgba(255, 255, 255, 0.2);
   padding: 0 0.5rem;
   overflow: hidden;
   width: 7rem;
@@ -235,10 +237,11 @@ header .logo {
 }
 header .logo a {
   color: #f4f4f4;
+  color: #ead2a1;
   text-transform: capitalize;
-  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-size: 1rem;
   text-decoration: none;
-  font-family: "Taviraj", serif;
 }
 header .logo a span {
   color: #f4f4f4;
@@ -246,7 +249,7 @@ header .logo a span {
 }
 @media (min-width: 768px) {
   header .logo a {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
 }
 header aside {
@@ -437,6 +440,22 @@ header .navbar ul li a:hover::after {
   width: 70%;
   opacity: 1;
 }
+header .desk-cta {
+  border: 2px solid #29323c;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  background-color: #f4f4f4;
+  border-radius: 0.5rem;
+}
+@media (max-width: 820px) {
+  header .desk-cta {
+    display: none;
+  }
+}
+header .desk-cta a {
+  color: #29323c;
+  text-decoration: none;
+}
 header.aside-header {
   background: #29323c;
 }
@@ -514,6 +533,9 @@ header.aside-header .logo {
 @media (min-width: 768px) {
   .hero .banner .title h1 {
     font-size: 3rem;
+  }
+  .hero .banner .title p {
+    font-size: 1.25rem;
   }
 }
 .hero .banner .cta {

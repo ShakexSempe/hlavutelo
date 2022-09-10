@@ -3,7 +3,7 @@ header {
     // border: 1px solid red;
     position: fixed;
     top: 0;
-    background: $overlay-blue-darkest;
+    background: #6e706d;
     background: $overlay-blue-dark;
     height: 7vh;
     width: 100vw;
@@ -20,8 +20,10 @@ header {
 
     .logo {
         background: linear-gradient( 90deg, #000 20%, $overlay-blue-darker);
-        background: $overlay-blue-light;
+        background: #6e706d;
+        background: $overlay-blue-darker;
         border: $border-brand-sm;
+        border: $border-light-md;
         padding: 0 .5rem;
         // border-radius: $border-radius-sm;
         overflow: hidden;
@@ -35,16 +37,18 @@ header {
         }
         a {
             color: $text-light;
+            color: $span-gold;
             text-transform: capitalize;
-            font-size: 1.05rem;
+            text-transform: uppercase;
+            font-size: 1rem;
             text-decoration: none;
-            font-family: $font-title;
+            // font-family: $font-title;
             span{
                 color: $text-light;
                 font-family: $font-title;
             }
             @include md {
-                font-size: 1.5rem;
+                font-size: 1.15rem;
             }
         }
 
@@ -294,7 +298,20 @@ header {
             }
         }
     }
-    
+    .desk-cta {
+        @media (max-width: 820px){
+            display: none;
+        }
+        border: 2px solid $overlay-blue-dark;
+        padding: .5rem 1rem;
+        text-transform: capitalize;
+        background-color: #f4f4f4;
+        border-radius: $border-radius-sm;
+        a {
+            color: $text-dark;
+            text-decoration: none;
+        }
+    }
     // ASIDE ACTIVE HEADER
     &.aside-header {
         background: $overlay-blue-dark;
