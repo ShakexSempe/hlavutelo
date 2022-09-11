@@ -966,12 +966,17 @@ header.aside-header .logo {
   height: 100%;
   border-radius: 0.5rem;
   object-fit: cover;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   .about .about-flex-container .about-image figure img {
     border-radius: 1rem;
   }
 }
+.about .about-flex-container .about-image figure:hover img {
+  transform: scale(1.05);
+}
+
 footer {
   min-height: 20vh;
   width: 100%;

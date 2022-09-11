@@ -71,6 +71,7 @@
                     // border: 3px solid red;
                     border-radius: $border-radius-sm;
                     object-fit: cover;
+                    transition: .5s;
                     @include md {
                     // object-fit: contain;
                     border-radius: $border-radius-md;
@@ -78,7 +79,9 @@
                 }
 
                 &:hover {
-
+                    img {
+                        transform: scale(1.05);
+                    }
                 }
             }
         }
