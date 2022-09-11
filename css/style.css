@@ -921,7 +921,6 @@ header.aside-header .logo {
 }
 @media (min-width: 768px) {
   .about .about-flex-container .slogan {
-    text-align: center;
     padding: 10vh 1rem 5vh;
   }
 }
@@ -932,7 +931,6 @@ header.aside-header .logo {
 }
 @media (min-width: 768px) {
   .about .about-flex-container .slogan h2 {
-    text-align: center;
     font-size: 2.5rem;
   }
 }
@@ -942,13 +940,12 @@ header.aside-header .logo {
 }
 @media (min-width: 768px) {
   .about .about-flex-container .slogan .cta {
-    justify-content: center;
     gap: 1rem;
   }
 }
 .about .about-flex-container .slogan .cta a {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 .about .about-flex-container .slogan .cta a.btn-primary::before {
   background: #485563;
@@ -960,20 +957,21 @@ header.aside-header .logo {
   flex-grow: 1;
 }
 .about .about-flex-container .about-image figure {
-  width: 100%;
+  width: auto;
   height: 70vh;
+  overflow: hidden;
 }
 .about .about-flex-container .about-image figure img {
   width: 100%;
   height: 100%;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
 @media (min-width: 768px) {
   .about .about-flex-container .about-image figure img {
-    object-fit: contain;
+    border-radius: 1rem;
   }
 }
-
 footer {
   min-height: 20vh;
   width: 100%;
@@ -1057,8 +1055,7 @@ body {
   border-radius: 0.5rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
-  font-size: 2rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #29323c;
   text-shadow: 1px 0 2px #fff;
   font-weight: 600;
@@ -1087,7 +1084,6 @@ body {
 }
 @media (min-width: 576px) {
   .container main section .section-title h1 {
-    width: 10rem;
     font-size: 2.5rem;
   }
 }

@@ -78,8 +78,7 @@ body {
                     border-radius: $border-radius-sm;
                     text-transform: capitalize;
                     font-family: $font-title;
-                    font-size: 2rem;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     color: $overlay-blue-dark;
                     text-shadow: 1px 0 2px #fff;
                     font-weight: 600;
@@ -105,7 +104,7 @@ body {
                     }
                 }
                     @include sm {
-                        width: 10rem;
+                        // width: 10rem;
                         font-size: 2.5rem;
                     }
                 }
