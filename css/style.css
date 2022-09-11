@@ -905,6 +905,75 @@ header.aside-header .logo {
   }
 }
 
+.about .about-flex-container {
+  margin: 10vh auto 5vh;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .about .about-flex-container {
+    flex-direction: row;
+  }
+}
+.about .about-flex-container .slogan {
+  flex-basis: 50%;
+  color: #29323c;
+}
+@media (min-width: 768px) {
+  .about .about-flex-container .slogan {
+    text-align: center;
+    padding: 10vh 1rem 5vh;
+  }
+}
+.about .about-flex-container .slogan h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .about .about-flex-container .slogan h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+.about .about-flex-container .slogan .cta {
+  margin: 5vh auto;
+  display: flex;
+}
+@media (min-width: 768px) {
+  .about .about-flex-container .slogan .cta {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.about .about-flex-container .slogan .cta a {
+  display: inline-block;
+  font-size: 0.85rem;
+}
+.about .about-flex-container .slogan .cta a.btn-primary::before {
+  background: #485563;
+}
+.about .about-flex-container .slogan .cta a.btn-secondary::before {
+  background: #20262e;
+}
+.about .about-flex-container .about-image {
+  flex-grow: 1;
+}
+.about .about-flex-container .about-image figure {
+  width: 100%;
+  height: 70vh;
+}
+.about .about-flex-container .about-image figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .about .about-flex-container .about-image figure img {
+    object-fit: contain;
+  }
+}
+
 footer {
   min-height: 20vh;
   width: 100%;
@@ -974,13 +1043,13 @@ body {
   background: radial-gradient(#f4f4f4, #fff);
   position: relative;
 }
+@media (min-width: 768px) {
+  .container main section {
+    padding: 10vh 5vw;
+  }
+}
 .container main section .section-title {
   position: relative;
-}
-@media (min-width: 768px) {
-  .container main section .section-title {
-    top: 9vh;
-  }
 }
 .container main section .section-title h1 {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);

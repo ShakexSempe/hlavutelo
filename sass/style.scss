@@ -62,12 +62,15 @@ body {
             background: $background-secondary;
             // border-bottom: .15rem dashed rgba(0, 0, 0, 0.247);
             position: relative;
+            @include md {
+                padding: 10vh 5vw;
+            }
 
             .section-title {
                 position: relative;
                 // overflow: hidden;
                 @include md {
-                    top: 9vh;
+                    // top: 9vh;
                 }
                 h1 {
                     border: $border-dark-sm;
