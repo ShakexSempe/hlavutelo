@@ -221,9 +221,10 @@ header .logo {
   background: linear-gradient(90deg, #000 20%, #20262e);
   background: #6e706d;
   background: #20262e;
-  border: 0.105rem solid rgba(234, 210, 161, 0.4);
   border: 0.15rem solid rgba(255, 255, 255, 0.2);
+  border: 0.105rem solid rgba(234, 210, 161, 0.4);
   padding: 0 0.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
   width: 7rem;
   width: max-content;
@@ -238,8 +239,8 @@ header .logo {
 header .logo a {
   color: #f4f4f4;
   color: #ead2a1;
-  text-transform: capitalize;
   text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1rem;
   text-decoration: none;
 }
