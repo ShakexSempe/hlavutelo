@@ -1057,6 +1057,8 @@ body {
 }
 .container main section .section-title {
   position: relative;
+  background: radial-gradient(#f4f4f4, #fff);
+  z-index: 5;
 }
 .container main section .section-title h1 {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);

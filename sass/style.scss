@@ -68,6 +68,10 @@ body {
 
             .section-title {
                 position: relative;
+                // position: sticky;
+                // top: 7vh;
+                background: $background-secondary;
+                z-index: 5;
                 // overflow: hidden;
                 @include md {
                     // top: 9vh;
