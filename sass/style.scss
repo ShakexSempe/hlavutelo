@@ -80,7 +80,7 @@ body {
                     font-family: $font-title;
                     font-size: 2.5rem;
                     color: $overlay-blue-dark;
-                    text-shadow: 1px 0 2px #fff;
+                    // text-shadow: 1px 0 2px #fff;
                     font-weight: 600;
                     padding: 0 .5rem;
                     width: 7rem;
@@ -95,11 +95,12 @@ body {
                     width: 20%;
                     height: 100%;
                     background-color: $overlay-blue-light;
+                    background-color: $brand-logo;
                     z-index: -1;
-                    opacity: .6;
+                    // opacity: .6;
                     transition: 1s;
                     @include md {
-                        width: 5%;
+                        width: 10%;
                         // left: 0;
                     }
                 }
@@ -113,8 +114,8 @@ body {
                     h1 {
                         opacity: .6;
                         &::after {
-                            transform: rotate(45deg);
-                            opacity: .1;
+                            transform: rotate(45deg) scale(.8);
+                            opacity: .2;
                         }
                     }
                 }

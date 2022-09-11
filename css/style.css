@@ -219,7 +219,6 @@ header {
 }
 header .logo {
   background: linear-gradient(90deg, #000 20%, #20262e);
-  background: #6e706d;
   background: #20262e;
   border: 0.15rem solid rgba(255, 255, 255, 0.2);
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
@@ -1067,7 +1066,6 @@ body {
   font-family: "Taviraj", serif;
   font-size: 2.5rem;
   color: #29323c;
-  text-shadow: 1px 0 2px #fff;
   font-weight: 600;
   padding: 0 0.5rem;
   width: 7rem;
@@ -1083,13 +1081,13 @@ body {
   width: 20%;
   height: 100%;
   background-color: #485563;
+  background-color: #b28f59;
   z-index: -1;
-  opacity: 0.6;
   transition: 1s;
 }
 @media (min-width: 768px) {
   .container main section .section-title h1::after {
-    width: 5%;
+    width: 10%;
   }
 }
 @media (min-width: 576px) {
@@ -1101,8 +1099,8 @@ body {
   opacity: 0.6;
 }
 .container main section .section-title.active-title h1::after {
-  transform: rotate(45deg);
-  opacity: 0.1;
+  transform: rotate(45deg) scale(0.8);
+  opacity: 0.2;
 }
 
 /*# sourceMappingURL=style.css.map */
