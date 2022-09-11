@@ -10,7 +10,7 @@
     background-image: url(../img/rock-wall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 30%;
+    background-position: 5%;
     isolation: isolate;
     position: relative;
     // OVERLAY 
@@ -21,7 +21,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(90deg, rgba(255, 255, 255, .95) 30%, transparent 100%);
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, .95) 60%, transparent 100%);
+        background-image: linear-gradient(90deg, rgba(255, 255, 255, .95) 60%, transparent 100%);
         // background: linear-gradient(120deg, #000 5%, transparent 75%);
         background-repeat: no-repeat;
         z-index: -1;
