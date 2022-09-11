@@ -71,7 +71,9 @@ body {
                 // position: sticky;
                 // top: 7vh;
                 background: $background-secondary;
-                z-index: 5;
+                z-index: 3;
+                // width = 80% to remove from top btn overlap
+                width: 80%;
                 // overflow: hidden;
                 @include md {
                     // top: 9vh;

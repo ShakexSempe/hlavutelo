@@ -909,10 +909,15 @@ header.aside-header .logo {
   margin: 10vh auto 5vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.about .about-flex-container:last-of-type {
+  padding-bottom: 15vh;
 }
 @media (min-width: 768px) {
   .about .about-flex-container {
     flex-direction: row;
+    padding-bottom: 1rem;
   }
 }
 .about .about-flex-container .slogan {
@@ -934,9 +939,22 @@ header.aside-header .logo {
     font-size: 2.5rem;
   }
 }
+.about .about-flex-container .slogan p {
+  margin: 1rem 0;
+}
 .about .about-flex-container .slogan .cta {
   margin: 5vh auto;
   display: flex;
+}
+@media (max-width: 820px) {
+  .about .about-flex-container .slogan .cta {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .about .about-flex-container .slogan .cta {
@@ -963,10 +981,12 @@ header.aside-header .logo {
   transition: 1s;
   transition-delay: 0.5s;
 }
-.about .about-flex-container .slogan.io-item .cta {
-  opacity: 0;
-  transition: 1s;
-  transition-delay: 1.25s;
+@media (min-width: 768px) {
+  .about .about-flex-container .slogan.io-item .cta {
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1.25s;
+  }
 }
 .about .about-flex-container .slogan.active-item h2 {
   opacity: 1;
@@ -1092,7 +1112,8 @@ body {
 .container main section .section-title {
   position: relative;
   background: radial-gradient(#f4f4f4, #fff);
-  z-index: 5;
+  z-index: 3;
+  width: 80%;
 }
 .container main section .section-title h1 {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
