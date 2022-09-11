@@ -80,6 +80,7 @@ body {
                     font-family: $font-title;
                     font-size: 2.5rem;
                     color: $overlay-blue-dark;
+                    color: $brand-logo;
                     // text-shadow: 1px 0 2px #fff;
                     font-weight: 600;
                     padding: 0 .5rem;
@@ -95,7 +96,7 @@ body {
                     width: 20%;
                     height: 100%;
                     background-color: $overlay-blue-light;
-                    background-color: $brand-logo;
+                    // background-color: $brand-logo;
                     z-index: -1;
                     // opacity: .6;
                     transition: 1s;
@@ -115,6 +116,7 @@ body {
                         opacity: .6;
                         &::after {
                             transform: rotate(45deg) scale(.8);
+                            border-radius: $border-radius-md;
                             opacity: .2;
                         }
                     }
