@@ -953,6 +953,31 @@ header.aside-header .logo {
 .about .about-flex-container .slogan .cta a.btn-secondary::before {
   background: #20262e;
 }
+.about .about-flex-container .slogan.io-item h2 {
+  opacity: 0;
+  transition: 1s;
+}
+.about .about-flex-container .slogan.io-item p {
+  transform: translateY(1rem);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.about .about-flex-container .slogan.io-item .cta {
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1.25s;
+}
+.about .about-flex-container .slogan.active-item h2 {
+  opacity: 1;
+}
+.about .about-flex-container .slogan.active-item p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about .about-flex-container .slogan.active-item .cta {
+  opacity: 1;
+}
 .about .about-flex-container .about-image {
   flex-grow: 1;
 }
@@ -979,6 +1004,15 @@ header.aside-header .logo {
 }
 .about .about-flex-container .about-image figure:hover img {
   transform: scale(1.05);
+}
+.about .about-flex-container .about-image figure.io-item {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: 1.5s;
+}
+.about .about-flex-container .about-image figure.active-item {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {
