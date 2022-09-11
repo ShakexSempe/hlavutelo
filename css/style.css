@@ -234,6 +234,7 @@ header .logo {
 @media (min-width: 768px) {
   header .logo {
     text-align: left;
+    padding: 0.5rem 1rem;
   }
 }
 header .logo a {
@@ -960,6 +961,7 @@ header.aside-header .logo {
   width: auto;
   height: 70vh;
   overflow: hidden;
+  border-radius: 0.5rem;
 }
 .about .about-flex-container .about-image figure img {
   width: 100%;
@@ -969,6 +971,9 @@ header.aside-header .logo {
   transition: 0.5s;
 }
 @media (min-width: 768px) {
+  .about .about-flex-container .about-image figure {
+    border-radius: 1rem;
+  }
   .about .about-flex-container .about-image figure img {
     border-radius: 1rem;
   }
