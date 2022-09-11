@@ -102,7 +102,7 @@ body {
                     background-color: $overlay-blue-light;
                     // background-color: $brand-logo;
                     z-index: -1;
-                    // opacity: .6;
+                    opacity: .4;
                     transition: 1s;
                     @include md {
                         width: 10%;

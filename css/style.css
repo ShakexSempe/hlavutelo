@@ -1085,6 +1085,7 @@ body {
   height: 100%;
   background-color: #485563;
   z-index: -1;
+  opacity: 0.4;
   transition: 1s;
 }
 @media (min-width: 768px) {
