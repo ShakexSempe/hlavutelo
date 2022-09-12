@@ -3,6 +3,7 @@
         // border: 2px solid blue;
     }
     width: 100%;
+    padding: 8vh 0;
     min-height: 100vh;
     background-image: url('https://images.unsplash.com/photo-1585643893039-bd73dd37b899?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
     background-image: url('https://scontent-jnb1-1.xx.fbcdn.net/v/t1.6435-9/146259704_3492272897550299_465353955942899534_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeECju5rmnBGgmr2C2f8iTJNMgvcKkykXdYyC9wqTKRd1rF7TPyLeAvWU8OX0sEsjGk&_nc_ohc=HIg9fhAdKZIAX_OdjgE&_nc_ht=scontent-jnb1-1.xx&oh=00_AT9FwnReg_TecKJ1YLvPB8xmG3utthtbnq42b7qkmdkJZQ&oe=6344969E');
@@ -48,16 +49,35 @@
             opacity: .2;
         }
     }
+    // BANNER LOGO IMAGE
+    .hero-logo {
+        width: 10rem;
+        height: 10rem;
+        overflow: hidden;
+        border: $border-brand-sm;
+        border-radius: $border-radius-sm;
+        background: #fff;
+        margin-left: 5vw;
+        // position: relative;
+        // top: 10vh;
 
+        img {
+            // display: none;
+            width: 100%;
+            height: 100%;
+        }
+    }
     .banner {
-        position: relative;
-        top: 20vh;
+        // position: relative;
+        // top: 10vh;
         padding: 0 5vw;
         width: 100%;
+        margin-top: 1rem;
         @include md {
             top: 20vh;
             width: 50%;
         }
+        
         // TITLE = H1 + P
         .title {
             color: $brand;
