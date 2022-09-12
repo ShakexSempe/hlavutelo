@@ -227,7 +227,7 @@ header .logo {
   overflow: hidden;
   width: 7rem;
   width: max-content;
-  transition: 1s;
+  transition: 0.5s;
   text-align: left;
   transform: translateY(0vh);
 }
@@ -471,21 +471,32 @@ header .navbar ul li a:hover::after {
   width: 70%;
   opacity: 1;
 }
-header .desk-cta {
+header .header-cta {
   border: 2px solid #29323c;
   padding: 0.5rem 1rem;
   text-transform: capitalize;
   background-color: #f4f4f4;
   border-radius: 0.5rem;
+  border: 0.105rem solid rgba(234, 210, 161, 0.4);
+  transform: translateY(0);
+  transition: 1s;
 }
-@media (max-width: 820px) {
-  header .desk-cta {
-    display: none;
-  }
-}
-header .desk-cta a {
+header .header-cta a {
   color: #29323c;
   text-decoration: none;
+  font-weight: 500;
+}
+@media (max-width: 820px) {
+  header .header-cta {
+    position: absolute;
+    right: 15vw;
+    padding: 0.2rem 0.5rem;
+    background: #485563;
+  }
+  header .header-cta a {
+    font-size: 0.8rem;
+    color: #f4f4f4;
+  }
 }
 header.aside-header {
   background: #29323c;
@@ -507,6 +518,10 @@ header.hero-header .logo {
     color: #29323c;
   }
 }
+header.hero-header .header-cta {
+  transform: translateY(-10vh);
+}
+
 .hero {
   width: 100%;
   padding: 8vh 0;
