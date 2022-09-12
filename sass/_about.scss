@@ -1,5 +1,5 @@
 .about {
-    .about-flex-container {
+    .flex-container {
         // border: 2px solid red;
         margin: 10vh auto 5vh;
         display: flex;
@@ -19,7 +19,7 @@
             color: $text-dark;
             @include md {
                 // text-align: right;
-                padding: 10vh 1rem 5vh;
+                padding: 15vh 1rem 5vh;
             }
 
             h2 {
@@ -105,7 +105,7 @@
             }
         }
 
-        .about-image {
+        .flex-image {
             // border: 2px solid blue;
             flex-grow: 1;
 
@@ -150,6 +150,12 @@
                     opacity: 1;
                     transform: translateY(0);
                 }
+            }
+        }
+
+        &.tile-flex-container {
+            @include md {
+                flex-direction: row-reverse;
             }
         }
     }
