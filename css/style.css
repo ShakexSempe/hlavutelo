@@ -222,7 +222,7 @@ header .logo {
   background: #20262e;
   border: 0.15rem solid rgba(255, 255, 255, 0.2);
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
-  padding: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   overflow: hidden;
   width: 7rem;
