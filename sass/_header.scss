@@ -347,6 +347,7 @@ header {
     }
     // INTERSECTION CLASSES
     &.hero-header {
+        background: transparent;
         .logo {
             transform: translateY(-10vh);
         }
@@ -362,8 +363,10 @@ header {
                 }
             }
         }
-        .logo {
-            // border: $border-light-sm;
+        .hamburger {
+            // .bar {
+            //     background: $overlay-blue-dark;
+            // }
         }
     } 
 }

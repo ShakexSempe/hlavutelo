@@ -493,6 +493,9 @@ header.aside-header {
 header.aside-header .logo {
   transform: translateY(0);
 }
+header.hero-header {
+  background: transparent;
+}
 header.hero-header .logo {
   transform: translateY(-10vh);
 }
