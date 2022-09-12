@@ -38,6 +38,7 @@ $overlay-blue-darkest:#0a0c0f;
 
 // BUTTON COLORS
 $btn-overlay: linear-gradient(0deg, #20262e, #485563 );
+$btn-overlay-light: linear-gradient(0deg, hsl(211, 16%, 25%), #485563 );
 $btn-overlay-hover: linear-gradient(0deg , #485563, #20262e );
 $crimson-btn: linear-gradient(0deg, #3f0d0d, #dc134c);
 $crimson-btn-hover: linear-gradient(0deg, #dc134c , #3f0d0d);
