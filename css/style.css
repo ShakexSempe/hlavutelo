@@ -650,6 +650,9 @@ header.hero-header .header-cta {
   .hero .banner .title p {
     font-size: 1.25rem;
   }
+  .hero .banner .title p span {
+    font-size: inherit;
+  }
 }
 .hero .banner .cta {
   margin-top: 1.5rem;
