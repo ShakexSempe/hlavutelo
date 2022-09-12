@@ -1,8 +1,7 @@
 .contact {
     .contact-container {
-        // border: 2px solid blue;
+        border: $border-light-sm;
         margin-top: 5vh;
-        background: $overlay;
         border-radius: $border-radius-sm;
         padding: 1rem 0;
         @include md {
@@ -15,9 +14,10 @@
         }
         .contact-item {
             // border-bottom: $border-light-sm;
-            margin-bottom: .5rem;
+            margin: .5rem 0;
             padding: 1rem .5rem;
             // background: $overlay;
+            background: hsl(0, 0%, 93%);
             // box-shadow: $box-shadow;
             display: flex;
             align-items: center;
@@ -28,19 +28,19 @@
                 border-radius: $border-radius-sm;
                 border-color: $overlay-blue-dark;
                 padding: 1rem .5rem;
-                padding: 0 1rem;
                 margin-bottom: 0;
                 // background: $overlay;
             }
 
             .contact-icon {
                 // border: 2px solid yellow;
-                width: 2.5rem;
+                width: 3rem;
                 overflow: hidden;
 
                 i {
-                    font-size: 1.5rem;
-                    color: $brand;
+                    font-size: 2rem;
+                    font-weight: 900;
+                    color: $overlay-blue-light;
                 }
             }
 
@@ -52,8 +52,8 @@
                     font-size: 1.25rem;
                     text-transform: capitalize;
                     font-family: $font-title;
-                    font-weight: 400;
-                    color: $brand;
+                    font-weight: 600;
+                    color: $overlay-blue-dark;
                     margin-bottom: .25rem;
 
                     @include md {
@@ -64,8 +64,8 @@
                 a {
                     display: block;
                     text-decoration: none;
-                    color: $overlay-blue-darker;
                     color: $text-light;
+                    color: $overlay-blue-darker;
                     letter-spacing: .05rem;
                     position: relative;
 
@@ -83,74 +83,74 @@
             }
 
             // IO CLASS 
-            &.io-item {
-                .contact-icon {
-                    i {
-                        transform: scale(.5);
-                        transition: 1s;
-                    }
-                }
+            // &.io-item {
+            //     .contact-icon {
+            //         i {
+            //             transform: scale(.5);
+            //             transition: 1s;
+            //         }
+            //     }
 
-                .contact-info {
-                    h2 {
-                        color: $text-light;
-                        transition: .5s .5s;
-                    }
+            //     .contact-info {
+            //         h2 {
+            //             color: $text-light;
+            //             transition: .5s .5s;
+            //         }
 
-                    a {
-                        transform: translateX(1rem);
-                        transition: 1s;
+            //         a {
+            //             transform: translateX(1rem);
+            //             transition: 1s;
 
-                        &::after {
-                            transform: scale(0);
-                            transition: .5s;
-                        }
-                    }
-                }
-            }
+            //             &::after {
+            //                 transform: scale(0);
+            //                 transition: .5s;
+            //             }
+            //         }
+            //     }
+            // }
 
             // IO ACTIVE CLASS 
-            &.active-item {
-                .contact-icon {
-                    i {
-                        transform: scale(1);
-                        opacity: .7;
+            // &.active-item {
+            //     .contact-icon {
+            //         i {
+            //             transform: scale(1);
+            //             opacity: .7;
 
-                    }
-                }
+            //         }
+            //     }
 
-                .contact-info {
-                    h2 {
-                        color: $brand;
-                    }
+            //     .contact-info {
+            //         h2 {
+            //             color: $brand;
+            //         }
 
-                    a {
-                        transform: translateX(0);
-                    }
-                }
+            //         a {
+            //             transform: translateX(0);
+            //         }
+            //     }
 
-                &:hover {
-                    .contact-icon {
-                        i {
-                            opacity: .9;
-                            transition: .25s;
-                        }
-                    }
+            //     &:hover {
+            //         .contact-icon {
+            //             i {
+            //                 opacity: .9;
+            //                 transition: .25s;
+            //             }
+            //         }
 
-                    .contact-info {
-                        h2 {
-                            opacity: .7;
-                            transition: .25s;
-                        }
+            //         .contact-info {
+            //             h2 {
+            //                 opacity: .7;
+            //                 transition: .25s;
+            //             }
 
-                        a {
-                            &::after {
-                                transform: scale(1);
-                            }
-                        }
-                    }
-                }
-            }
+            //             a {
+            //                 &::after {
+            //                     transform: scale(1);
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
         }
     }
     .contact-form {

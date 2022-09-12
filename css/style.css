@@ -786,8 +786,8 @@ header.hero-header .header-cta {
 }
 
 .contact .contact-container {
+  border: 0.105rem solid rgba(255, 255, 255, 0.2);
   margin-top: 5vh;
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
   border-radius: 0.5rem;
   padding: 1rem 0;
 }
@@ -800,8 +800,9 @@ header.hero-header .header-cta {
   }
 }
 .contact .contact-container .contact-item {
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
   padding: 1rem 0.5rem;
+  background: #ededed;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -812,31 +813,31 @@ header.hero-header .header-cta {
     border-radius: 0.5rem;
     border-color: #29323c;
     padding: 1rem 0.5rem;
-    padding: 0 1rem;
     margin-bottom: 0;
   }
 }
 .contact .contact-container .contact-item .contact-icon {
-  width: 2.5rem;
+  width: 3rem;
   overflow: hidden;
 }
 .contact .contact-container .contact-item .contact-icon i {
-  font-size: 1.5rem;
-  color: #ead2a1;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #485563;
 }
 .contact .contact-container .contact-item .contact-info h2 {
   font-size: 1.25rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
-  font-weight: 400;
-  color: #ead2a1;
+  font-weight: 600;
+  color: #29323c;
   margin-bottom: 0.25rem;
 }
 .contact .contact-container .contact-item .contact-info a {
   display: block;
   text-decoration: none;
-  color: #20262e;
   color: #f4f4f4;
+  color: #20262e;
   letter-spacing: 0.05rem;
   position: relative;
 }
@@ -848,43 +849,6 @@ header.hero-header .header-cta {
   width: 100%;
   height: 0.05rem;
   background-color: #ead2a1;
-}
-.contact .contact-container .contact-item.io-item .contact-icon i {
-  transform: scale(0.5);
-  transition: 1s;
-}
-.contact .contact-container .contact-item.io-item .contact-info h2 {
-  color: #f4f4f4;
-  transition: 0.5s 0.5s;
-}
-.contact .contact-container .contact-item.io-item .contact-info a {
-  transform: translateX(1rem);
-  transition: 1s;
-}
-.contact .contact-container .contact-item.io-item .contact-info a::after {
-  transform: scale(0);
-  transition: 0.5s;
-}
-.contact .contact-container .contact-item.active-item .contact-icon i {
-  transform: scale(1);
-  opacity: 0.7;
-}
-.contact .contact-container .contact-item.active-item .contact-info h2 {
-  color: #ead2a1;
-}
-.contact .contact-container .contact-item.active-item .contact-info a {
-  transform: translateX(0);
-}
-.contact .contact-container .contact-item.active-item:hover .contact-icon i {
-  opacity: 0.9;
-  transition: 0.25s;
-}
-.contact .contact-container .contact-item.active-item:hover .contact-info h2 {
-  opacity: 0.7;
-  transition: 0.25s;
-}
-.contact .contact-container .contact-item.active-item:hover .contact-info a::after {
-  transform: scale(1);
 }
 .contact .contact-form {
   margin-top: 5vh;
