@@ -282,7 +282,7 @@ header aside ul li {
 header aside ul li.aside-dropdown {
   border: none;
   border-radius: 0.5rem;
-  border-bottom: 2px solid #ead2a1;
+  border-bottom: 1px solid #ead2a1;
   padding: 0 0 0.5rem 0;
   position: relative;
   display: flex;
@@ -295,7 +295,6 @@ header aside ul li.aside-dropdown button {
   font-family: "Montserrat", sans-serif;
   color: #f4f4f4;
   font-size: 1rem;
-  background: yellow;
   background: transparent;
   border: none;
   display: flex;
@@ -322,13 +321,14 @@ header aside ul li.aside-dropdown .dropdown-content a {
   text-decoration: none;
   color: #ead2a1;
   margin-left: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.5rem;
   opacity: 0;
   transform: translateX(1rem);
   transition: 0.5s;
 }
 header aside ul li.aside-dropdown:hover {
-  border-color: #f4f4f4;
+  border-color: #fff3;
 }
 header aside ul li.aside-dropdown:hover button i {
   opacity: 0.5;
@@ -382,6 +382,10 @@ header aside.active ul li {
 header aside.active ul li a::after {
   transition: 0.25s;
 }
+header aside.active ul li a:hover {
+  background-color: #fff1;
+  transition: 0.25s;
+}
 header aside.active ul li::after {
   transform: translateX(0);
   opacity: 1;
@@ -422,6 +426,10 @@ header aside.active .contact-links a:nth-child(3) {
 }
 header aside.active .contact-links a:nth-child(3) i {
   transition-delay: 0.8s;
+}
+header aside.active .contact-links a:hover {
+  transform: translateX(0.25rem);
+  transition: 0.25s;
 }
 @media (max-width: 819px) {
   header .navbar {
@@ -1129,9 +1137,6 @@ footer figure img {
   object-fit: contain;
 }
 @media (min-width: 768px) {
-  footer figure {
-    border: 1px solid red;
-  }
   footer figure img {
     width: 100%;
   }
@@ -1201,7 +1206,7 @@ body {
 .container main section {
   min-height: 100vh;
   width: 100%;
-  padding: 7vh 5vw;
+  padding: 8vh 5vw;
   background: #fafafa;
   position: relative;
 }
@@ -1213,7 +1218,8 @@ body {
 .container main section .section-title {
   position: relative;
   background: #fafafa;
-  z-index: 3;
+  background: transparent;
+  z-index: 1;
   width: 80%;
 }
 .container main section .section-title h1 {

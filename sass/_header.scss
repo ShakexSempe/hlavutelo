@@ -88,7 +88,7 @@ header {
                     // border: 1px solid blue;
                     border: none;
                     border-radius: $border-radius-sm;
-                    border-bottom: 2px solid $brand;
+                    border-bottom: 1px solid $brand;
                     padding: 0 0 .5rem 0;
                     position: relative;
                     display: flex;
@@ -101,7 +101,6 @@ header {
                         font-family: $font-content;
                         color: $text-light;
                         font-size: 1rem;
-                        background: yellow;
                         background: transparent;
                         border: none;
                         display: flex;
@@ -130,7 +129,8 @@ header {
                             text-decoration: none;
                             color: $brand;
                             margin-left: 1rem;
-                            padding: .5rem  0;
+                            padding: .5rem  .25rem;
+                            border-radius: $border-radius-sm;
                             opacity: 0;
                             transform: translateX(1rem);
                             transition: .5s;
@@ -138,7 +138,7 @@ header {
                     }
 
                     &:hover {
-                        border-color: $text-light;
+                        border-color: #fff3;
                         button {
                             i {
                                 opacity: .5;
@@ -205,6 +205,11 @@ header {
                         &::after {
                             transition: .25s;
                         }
+                        // LINK HOVER 
+                    &:hover {
+                        background-color: #fff1;
+                        transition: .25s;
+                    }
                     }
                     &::after {
                         transform: translateX(0);
@@ -234,8 +239,8 @@ header {
                             transition-delay: .4s;
                         }
                     }
+                    
                 }
-                
             }
 
             .contact-links {
@@ -263,6 +268,11 @@ header {
                         i {
                         transition-delay: .8s;
                         }
+                    }
+                    // LINK HOVER
+                    &:hover {
+                        transform: translateX(.25rem);
+                        transition: .25s;
                     }
                 }
             }
