@@ -1272,5 +1272,32 @@ body {
   border-radius: 1rem;
   opacity: 0.2;
 }
+.container main .section-pad {
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+}
+.container main .section-pad figure {
+  width: 100%;
+  height: 100%;
+}
+.container main .section-pad figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .container main .section-pad {
+    height: 100vh;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .container main .section-pad figure {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

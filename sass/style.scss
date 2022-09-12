@@ -129,6 +129,33 @@ body {
                     }
                 }
             }
+
+        }
+        .section-pad {
+            // border: 2px solid red;
+            overflow: hidden;
+            width: 100%;
+            height: 70vh;
+            figure {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            @include md {
+                height: 100vh;
+                figure {
+                    display: none;
+                }
+                background-image: url("../img/logo.png");
+                background-position: center;
+                background-size: 35%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
         }
     }
 }
