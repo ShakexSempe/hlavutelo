@@ -369,6 +369,8 @@ header aside ul li.aside-dropdown .dropdown-content a {
 }
 header aside ul li.aside-dropdown:hover {
   border-color: #fff3;
+  border-radius: 0;
+  transition: border 0.5s;
 }
 header aside ul li.aside-dropdown:hover button i {
   opacity: 0.5;
@@ -418,6 +420,7 @@ header aside.active {
 }
 header aside.active ul li {
   transform: translateX(0);
+  transition-delay: 0.25s;
 }
 header aside.active ul li a::after {
   transition: 0.25s;
@@ -450,22 +453,22 @@ header aside.active .contact-links a i {
   transform: translateX(0);
 }
 header aside.active .contact-links a:nth-child(1) {
-  transition-delay: 0.8s;
+  transition-delay: 0.5s;
 }
 header aside.active .contact-links a:nth-child(1) i {
-  transition-delay: 0.6s;
+  transition-delay: 0.55s;
 }
 header aside.active .contact-links a:nth-child(2) {
-  transition-delay: 0.8s;
-}
-header aside.active .contact-links a:nth-child(2) i {
   transition-delay: 0.7s;
 }
+header aside.active .contact-links a:nth-child(2) i {
+  transition-delay: 0.75s;
+}
 header aside.active .contact-links a:nth-child(3) {
-  transition-delay: 0.8s;
+  transition-delay: 0.9s;
 }
 header aside.active .contact-links a:nth-child(3) i {
-  transition-delay: 0.8s;
+  transition-delay: 0.95s;
 }
 header aside.active .contact-links a:hover {
   transform: translateX(0.25rem);
