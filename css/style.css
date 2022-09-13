@@ -693,7 +693,7 @@ header.hero-header .header-cta {
     font-size: 1.25rem;
   }
   .hero .banner .title p span {
-    font-size: inherit;
+    font-size: 1rem;
   }
 }
 .hero .banner .cta {
@@ -1400,7 +1400,7 @@ body {
 }
 .container main .company-info {
   width: 100%;
-  height: 95vh;
+  min-height: 95vh;
   background: #f4f4f4;
   position: relative;
 }
@@ -1414,9 +1414,14 @@ body {
 }
 .container main .company-info article {
   position: absolute;
-  top: 10vh;
+  top: 5vh;
   left: 5vw;
   z-index: 5;
+}
+@media (min-width: 768px) {
+  .container main .company-info article {
+    top: 10vh;
+  }
 }
 .container main .company-info article .article-item {
   margin-bottom: 1rem;
@@ -1428,14 +1433,14 @@ body {
   font-weight: 600;
   font-size: 1.25rem;
 }
+@media (min-width: 768px) {
+  .container main .company-info article .article-item h3 {
+    font-size: 1.8rem;
+  }
+}
 .container main .company-info article .article-item p {
   font-weight: 400;
   font-size: 1rem;
-}
-.container main .company-info article .article-item ul h3 {
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
 }
 .container main .company-info article .article-item ul li {
   padding-top: 0.5rem;
