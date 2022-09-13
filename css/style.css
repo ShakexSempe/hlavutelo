@@ -1123,11 +1123,11 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 10vw;
   }
 }
 footer figure {
   overflow: hidden;
-  margin: 0 auto;
   height: 100%;
   width: auto;
   width: auto;
@@ -1143,6 +1143,7 @@ footer figure img {
 @media (min-width: 768px) {
   footer figure img {
     width: 100%;
+    object-position: left;
   }
 }
 footer .copyright {

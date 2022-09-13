@@ -15,10 +15,11 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        // border: 2px solid yellow;
+        padding: 1rem 10vw;
     }
     figure {    
         overflow: hidden;
-        margin: 0 auto;
         height: 100%;
         width: auto;
         width: auto;
@@ -39,6 +40,7 @@ footer {
             // border: 1px solid red;
             img {
                 width: 100%;
+                object-position: left;
 
             }
         }
