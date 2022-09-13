@@ -210,6 +210,7 @@
   width: 100%;
   padding: 1rem 5vw;
   background: #0a0c0f;
+  background: linear-gradient(0deg, #0a0c0f, #20262e);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
