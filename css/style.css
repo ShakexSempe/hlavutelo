@@ -1077,7 +1077,7 @@ header.hero-header .header-cta {
   transition: 0.5s;
 }
 .contact .contact-form {
-  margin-top: 5vh;
+  padding-top: 10vh;
 }
 .contact .contact-form form {
   padding: 5vh 0;
