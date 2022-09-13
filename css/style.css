@@ -1483,6 +1483,16 @@ body {
   letter-spacing: normal;
   opacity: 1;
 }
+.container main .company-info article .article-item.active-item ul li:hover {
+  color: #ead2a1;
+  transition: 0.25s;
+  transition-delay: 0;
+  transform: scale(1.05);
+  font-weight: 600;
+}
+.container main .company-info article .article-item.active-item ul li:hover::marker {
+  color: transparent;
+}
 @media (min-width: 768px) {
   .container main .company-info {
     background-image: url(../img/fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);

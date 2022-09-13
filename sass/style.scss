@@ -259,6 +259,16 @@ body {
                             li {
                                 letter-spacing: normal;
                                 opacity: 1;
+                                &:hover {
+                                    color: $brand;
+                                    transition: .25s;
+                                    transition-delay: 0;
+                                    transform: scale(1.05);
+                                    font-weight: 600;
+                                    &::marker {
+                                        color: transparent;
+                                    }
+                                }
                             }
                         }
                     }
