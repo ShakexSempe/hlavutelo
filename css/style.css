@@ -851,6 +851,7 @@ header.hero-header .header-cta {
 .contact .contact-container .contact-item {
   margin: 0.5rem 0;
   padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
   background: #ededed;
   display: flex;
   align-items: center;
@@ -868,8 +869,51 @@ header.hero-header .header-cta {
 .contact .contact-container .contact-item .contact-icon {
   width: 3rem;
   overflow: hidden;
+  position: relative;
+}
+.contact .contact-container .contact-item .contact-icon::after, .contact .contact-container .contact-item .contact-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Font Awesome 6 Free";
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: 0.5s;
+  color: #485563;
+}
+.contact .contact-container .contact-item .contact-icon.phone-icon::before {
+  content: "";
+}
+.contact .contact-container .contact-item .contact-icon.phone-icon::after {
+  content: "";
+  opacity: 0;
+  transform: translateX(-0.25rem);
+}
+.contact .contact-container .contact-item .contact-icon.email-icon::before {
+  content: "";
+}
+.contact .contact-container .contact-item .contact-icon.email-icon::after {
+  content: "";
+  opacity: 0;
+  transform: translateX(-0.25rem);
+}
+.contact .contact-container .contact-item .contact-icon.social-icon::before {
+  content: "";
+  font-family: "Font Awesome 6 Brands";
+}
+.contact .contact-container .contact-item .contact-icon.social-icon::after {
+  content: "";
+  font-family: "Font Awesome 6 Brands";
+  opacity: 0;
+  transform: translateX(-0.25rem);
 }
 .contact .contact-container .contact-item .contact-icon i {
+  opacity: 0;
   font-size: 2rem;
   font-weight: 900;
   color: #485563;
@@ -881,6 +925,7 @@ header.hero-header .header-cta {
   font-weight: 600;
   color: #29323c;
   margin-bottom: 0.25rem;
+  transition: 0.5s;
 }
 .contact .contact-container .contact-item .contact-info a {
   display: block;
@@ -889,15 +934,26 @@ header.hero-header .header-cta {
   color: #20262e;
   letter-spacing: 0.05rem;
   position: relative;
+  transition: 0.5s;
 }
-.contact .contact-container .contact-item .contact-info a::after {
-  content: "";
-  position: absolute;
-  bottom: -0.05rem;
-  left: 0;
-  width: 100%;
-  height: 0.05rem;
-  background-color: #ead2a1;
+.contact .contact-container .contact-item:hover {
+  background: #f4f4f4;
+  transition: 0.25s;
+}
+.contact .contact-container .contact-item:hover .contact-icon::before {
+  opacity: 0;
+  transform: translateX(-0.25rem);
+}
+.contact .contact-container .contact-item:hover .contact-icon::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+.contact .contact-container .contact-item:hover .contact-info h2 {
+  opacity: 0.5;
+}
+.contact .contact-container .contact-item:hover .contact-info a {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .contact .contact-form {
   margin-top: 5vh;
