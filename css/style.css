@@ -1400,7 +1400,7 @@ body {
 }
 .container main .company-info {
   width: 100%;
-  min-height: 95vh;
+  height: 95vh;
   background: #f4f4f4;
   position: relative;
 }
@@ -1428,6 +1428,7 @@ body {
   padding: 0.5rem;
   border-radius: 0.5rem;
   text-transform: capitalize;
+  color: #29323c;
 }
 .container main .company-info article .article-item h3 {
   font-weight: 600;
@@ -1454,6 +1455,33 @@ body {
     float: right;
     text-align: right;
   }
+}
+.container main .company-info article .article-item.io-item h3 {
+  color: #ead2a1;
+  transition: 1.5s;
+}
+.container main .company-info article .article-item.io-item p {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+}
+.container main .company-info article .article-item.io-item ul li {
+  letter-spacing: 0.05rem;
+  opacity: 0;
+  transition: 1.5s;
+  transition-delay: 0.5s;
+}
+.container main .company-info article .article-item.active-item h3 {
+  color: inherit;
+}
+.container main .company-info article .article-item.active-item p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.container main .company-info article .article-item.active-item ul li {
+  letter-spacing: normal;
+  opacity: 1;
 }
 @media (min-width: 768px) {
   .container main .company-info {

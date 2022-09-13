@@ -161,7 +161,7 @@ body {
         .company-info {
             // border: 2px solid red;
             width: 100%;
-            min-height: 95vh;
+            height: 95vh;
             background: #f4f4f4;
             position: relative;
             figure {
@@ -186,15 +186,15 @@ body {
                 .article-item {
                     // border: 1px solid red;
                     margin-bottom: 1rem;
-                    // background: rgba(232, 233, 235, .4);
-                    // background: linear-gradient(90deg,transparent, rgb(232, 233, 235,));
                     padding: .5rem;
                     border-radius: $border-radius-sm;
                     text-transform: capitalize;
+                    color: $overlay-blue-dark;
 
                     h3 {
                         font-weight: 600;
                         font-size: 1.25rem;
+
                         @include md {
                             font-size: 1.8rem;
                         }
@@ -203,25 +203,66 @@ body {
                     p {
                         font-weight: 400;
                         font-size: 1rem;
-                        
+
                     }
 
-                ul {
-                    li {
-                        &::marker {
-                            color: #0003;
-                        }
-                        padding-top: .5rem;
-                        font-size: .95rem;
-                        @include md {
-                        &:nth-child(even) {
-                            float: right;
-                            text-align: right;
+                    ul {
+                        li {
+                            &::marker {
+                                color: #0003;
+                            }
+
+                            padding-top: .5rem;
+                            font-size: .95rem;
+
+                            @include md {
+                                &:nth-child(even) {
+                                    float: right;
+                                    text-align: right;
+                                }
+                            }
                         }
                     }
+
+                    // IO CLASS
+                    &.io-item {
+                        h3 {
+                            color: $brand;
+                            transition: 1.5s;
+                        }
+                        p {
+                            opacity: 0;
+                            transform: translateY(1rem);
+                            transition: 1.5s;
+                            transition-delay: .5s;
+                        }
+                        ul {
+                            li {
+                                letter-spacing: .05rem;
+                                opacity: 0;
+                                transition: 1.5s;
+                                transition-delay: .5s;
+                            }
+                        }
+                    }
+                    
+                    // ACTIVE CLASS
+                    &.active-item {
+                        h3 {
+                            color: inherit;
+                        }
+                        p {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                        ul {
+                            li {
+                                letter-spacing: normal;
+                                opacity: 1;
+                            }
+                        }
                     }
                 }
-            }
             }
 
             // DESKTOP
