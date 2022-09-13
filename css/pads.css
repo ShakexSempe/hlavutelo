@@ -1,0 +1,24 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 27 | /         @include md {
+ * 28 | |             position: absolute;
+ * 29 | |             top: 5vh;
+ * 30 | |             left: 5vw;
+ * 31 | |             top: 10vh;
+ * 32 | |             padding: 0 0 0 10vw;
+ * 33 | |         background-color: transparent;
+ * 34 | | 
+ * 35 | \         }
+ *    '
+ *   sass\pads.scss 27:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 27 \2502  \250c          @include md {\a 28 \2502  \2502              position: absolute;\a 29 \2502  \2502              top: 5vh;\a 30 \2502  \2502              left: 5vw;\a 31 \2502  \2502              top: 10vh;\a 32 \2502  \2502              padding: 0 0 0 10vw;\a 33 \2502  \2502          background-color: transparent;\a 34 \2502  \2502  \a 35 \2502  \2514          }\a    \2575 \a   sass\\pads.scss 27:9  root stylesheet";
+}
