@@ -4,7 +4,8 @@ const links = document.querySelectorAll('header a');
 const header = document.querySelector('.header');
 const container = document.querySelector('.container');
 const homebtn = document.querySelector('.home-button');
-console.log(links);
+const footerNav = document.querySelector('.footer-nav');
+console.log(footerNav);
 
 // HAMBURGER TOGGLE
 hamburger.addEventListener("click", () => {
@@ -40,10 +41,12 @@ const heroObserver = new IntersectionObserver(
                 console.log("Her NOT io");
                 header.classList.remove('hero-header');
                 homebtn.classList.add('active');
+                footerNav.classList.add('active-footer');
             } else {
                 console.log("hero IS io");
                 header.classList.add('hero-header');
                 homebtn.classList.remove('active');
+                footerNav.classList.remove('active-footer');
             }
         });
     }, heroOptions
