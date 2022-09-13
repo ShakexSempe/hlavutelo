@@ -679,7 +679,7 @@ header.hero-header .header-cta {
 .hero .banner .title p span {
   display: block;
   opacity: 0.8;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 @media (min-width: 768px) {
   .hero .banner .title h1 {
