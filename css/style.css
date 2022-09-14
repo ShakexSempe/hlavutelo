@@ -739,8 +739,6 @@ header.hero-header .header-cta {
   background-image: url(../img/hero-mobile.jpg);
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 60%, transparent 100%);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
   isolation: isolate;
   position: relative;
 }
@@ -753,6 +751,8 @@ header.hero-header .header-cta {
   height: 100%;
   background-image: url(../img/hero-mobile.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
   z-index: -1;
   mix-blend-mode: overlay;
 }
