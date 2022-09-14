@@ -1219,6 +1219,8 @@ header.hero-header .header-cta {
 .about .flex-container .slogan {
   flex-basis: 50%;
   color: #29323c;
+  text-transform: capitalize;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .about .flex-container .slogan {
@@ -1226,7 +1228,6 @@ header.hero-header .header-cta {
   }
 }
 .about .flex-container .slogan h2 {
-  text-transform: capitalize;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -1234,6 +1235,9 @@ header.hero-header .header-cta {
   .about .flex-container .slogan h2 {
     font-size: 2.5rem;
   }
+}
+.about .flex-container .slogan h3 {
+  opacity: 0.8;
 }
 .about .flex-container .slogan p {
   margin: 1rem 0;
@@ -1335,6 +1339,40 @@ header.hero-header .header-cta {
   .about .flex-container.reverse-flex-container {
     flex-direction: row-reverse;
   }
+}
+.about .flex-container.io-item .slogan h2 {
+  opacity: 0;
+}
+.about .flex-container.io-item .slogan h3 {
+  opacity: 0;
+  letter-spacing: 0.1rem;
+}
+.about .flex-container.io-item .slogan p {
+  opacity: 0;
+  transform: translateY(1.5rem);
+}
+.about .flex-container.io-item .flex-image {
+  transform: translateY(5vh);
+  opacity: 0;
+}
+.about .flex-container.active-item .slogan h2 {
+  opacity: 1;
+  transition: 1.5s;
+}
+.about .flex-container.active-item .slogan h3 {
+  opacity: 0.8;
+  letter-spacing: normal;
+  transition: 1.5s 0.5s;
+}
+.about .flex-container.active-item .slogan p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1.5s 1s;
+}
+.about .flex-container.active-item .flex-image {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 1.5s 1.5s;
 }
 
 footer {

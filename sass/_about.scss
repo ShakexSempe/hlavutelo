@@ -17,13 +17,14 @@
             // border: 2px solid red;
             flex-basis: 50%;
             color: $text-dark;
+            text-transform: capitalize;
+            overflow: hidden;
             @include md {
                 // text-align: right;
                 padding: 15vh 1rem 5vh;
             }
 
             h2 {
-                text-transform: capitalize;
                 font-size: 2rem;
                 margin-bottom: .5rem;
                 @include md {
@@ -31,7 +32,9 @@
                     font-size: 2.5rem;
                 }
             }
-
+            h3 {
+                opacity: .8;
+            }
             p {
                 margin: 1rem 0;
             }
@@ -157,6 +160,53 @@
         &.reverse-flex-container {
             @include md {
                 flex-direction: row-reverse;
+            }
+        }
+
+        // IO CLASSES
+        &.io-item {
+            .slogan {
+                h2 {
+                    opacity: 0;
+                }
+                h3 {
+                    opacity: 0;
+                    letter-spacing: .1rem;
+                }
+                p {
+                    opacity: 0;
+                    transform: translateY(1.5rem);
+                }
+            }
+
+            .flex-image {
+                transform: translateY(5vh);
+                opacity: 0;
+            }
+        }
+        // IO ACTIVE
+        &.active-item {
+            .slogan {
+                h2 {
+                    opacity: 1;
+                    transition: 1.5s;
+                }
+                h3 {
+                    opacity: .8;
+                    letter-spacing: normal;
+                    transition: 1.5s .5s;
+                }
+                p {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition: 1.5s 1s;
+                }
+            }
+
+            .flex-image {
+                transform: translateY(0);
+                opacity: 1;
+                transition: 1.5s 1.5s;
             }
         }
     }
