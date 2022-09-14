@@ -316,11 +316,18 @@ header aside ul {
 header aside ul li {
   display: flex;
   transform: translateX(5rem);
-  transition: 2s;
+  transition: 1s;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+header aside ul li a {
+  text-transform: capitalize;
+  color: #f4f4f4;
+  padding: 0.5rem;
+  text-decoration: none;
 }
 header aside ul li.aside-dropdown {
   border: none;
-  border-radius: 0.5rem;
   border-bottom: 1px solid #ead2a1;
   padding: 0 0 0.5rem 0;
   position: relative;
@@ -370,6 +377,7 @@ header aside ul li.aside-dropdown .dropdown-content a {
 header aside ul li.aside-dropdown:hover {
   border-color: #fff3;
   border-radius: 0;
+  border-radius: 0.5rem;
   transition: border 0.5s;
 }
 header aside ul li.aside-dropdown:hover button i {
@@ -420,7 +428,15 @@ header aside.active {
 }
 header aside.active ul li {
   transform: translateX(0);
+}
+header aside.active ul li:nth-child(1) {
   transition-delay: 0.25s;
+}
+header aside.active ul li:nth-child(2) {
+  transition-delay: 0.3s;
+}
+header aside.active ul li:nth-child(3) {
+  transition-delay: 0.35s;
 }
 header aside.active ul li a::after {
   transition: 0.25s;

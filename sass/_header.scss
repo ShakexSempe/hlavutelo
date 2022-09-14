@@ -79,15 +79,25 @@ header {
             width: 90%;
 
             li {
-                // border: 1px solid yellow;
+                // border-bottom: $border-brand-sm;
+                // border-radius: $border-radius-sm;
                 display: flex;
                 // height: 100%;
                 transform: translateX(5rem);
-                transition: 2s;
+                transition: 1s;
+                padding-bottom: .5rem;
+                margin-bottom: 1rem;
+
+                a {
+                    text-transform: capitalize;
+                    color: #f4f4f4;
+                    padding: .5rem;
+                    text-decoration: none;
+                }
+
                 &.aside-dropdown {
                     // border: 1px solid blue;
                     border: none;
-                    border-radius: $border-radius-sm;
                     border-bottom: 1px solid $brand;
                     padding: 0 0 .5rem 0;
                     position: relative;
@@ -141,6 +151,7 @@ header {
                     &:hover {
                         border-color: #fff3;
                         border-radius: 0;
+                        border-radius: $border-radius-sm;
                         transition: border .5s;
                         button {
                             i {
@@ -203,18 +214,28 @@ header {
             ul {
                 li {
                     transform: translateX(0);
-                    transition-delay: .25s;
+                    &:nth-child(1) {
+                        transition-delay: .25s;
+                    }
+                    &:nth-child(2) {
+                        transition-delay: .3s;
+                    }
+                    &:nth-child(3) {
+                        transition-delay: .35s;
+                    }
                     // LINK BACKGROUND AFTER TRANSITION TIMING
                     a {
                         &::after {
                             transition: .25s;
                         }
+
                         // LINK HOVER 
-                    &:hover {
-                        background-color: #fff1;
-                        transition: .25s;
+                        &:hover {
+                            background-color: #fff1;
+                            transition: .25s;
+                        }
                     }
-                    }
+
                     &::after {
                         transform: translateX(0);
                         opacity: 1;
@@ -243,9 +264,9 @@ header {
                             transition-delay: .4s;
                         }
                     }
-                    
+
                 }
-            }
+                }
 
             .contact-links {
                 a {
