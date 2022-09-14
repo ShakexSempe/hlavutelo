@@ -1342,37 +1342,40 @@ header.hero-header .header-cta {
 }
 .about .flex-container.io-item .slogan h2 {
   opacity: 0;
+  transition: 1.5s;
 }
 .about .flex-container.io-item .slogan h3 {
   opacity: 0;
   letter-spacing: 0.1rem;
+  transition: 1.5s;
 }
 .about .flex-container.io-item .slogan p {
   opacity: 0;
   transform: translateY(1.5rem);
+  transition: 1.5s;
 }
 .about .flex-container.io-item .flex-image {
   transform: translateY(5vh);
   opacity: 0;
+  transition: 1.5s;
 }
 .about .flex-container.active-item .slogan h2 {
   opacity: 1;
-  transition: 1.5s;
 }
 .about .flex-container.active-item .slogan h3 {
   opacity: 0.8;
   letter-spacing: normal;
-  transition: 1.5s 0.5s;
+  transition-delay: 0.5s;
 }
 .about .flex-container.active-item .slogan p {
   opacity: 1;
   transform: translateY(0);
-  transition: 1.5s 1s;
+  transition-delay: 1s;
 }
 .about .flex-container.active-item .flex-image {
   transform: translateY(0);
   opacity: 1;
-  transition: 1.5s 1.5s;
+  transition-delay: 1.5s;
 }
 
 footer {

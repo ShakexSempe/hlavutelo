@@ -168,20 +168,24 @@
             .slogan {
                 h2 {
                     opacity: 0;
+                    transition: 1.5s;
                 }
                 h3 {
                     opacity: 0;
                     letter-spacing: .1rem;
+                    transition: 1.5s;
                 }
                 p {
                     opacity: 0;
                     transform: translateY(1.5rem);
+                    transition: 1.5s;
                 }
             }
 
             .flex-image {
                 transform: translateY(5vh);
                 opacity: 0;
+                transition: 1.5s;
             }
         }
         // IO ACTIVE
@@ -189,24 +193,23 @@
             .slogan {
                 h2 {
                     opacity: 1;
-                    transition: 1.5s;
                 }
                 h3 {
                     opacity: .8;
                     letter-spacing: normal;
-                    transition: 1.5s .5s;
+                    transition-delay: .5s;
                 }
                 p {
                     opacity: 1;
                     transform: translateY(0);
-                    transition: 1.5s 1s;
+                    transition-delay: 1s;
                 }
             }
 
             .flex-image {
                 transform: translateY(0);
                 opacity: 1;
-                transition: 1.5s 1.5s;
+                transition-delay: 1.5s;
             }
         }
     }
