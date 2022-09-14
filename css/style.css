@@ -758,6 +758,7 @@ header.hero-header .header-cta {
 }
 @media (min-width: 768px) {
   .hero {
+    background-size: cover;
     background-image: url("https://images.unsplash.com/photo-1614127938540-a1139bee1841?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
     position: relative;
     isolation: isolate;
@@ -1241,6 +1242,10 @@ header.hero-header .header-cta {
 }
 .about .flex-container .slogan p {
   margin: 1rem 0;
+  text-transform: none;
+}
+.about .flex-container .slogan p::after {
+  content: ".";
 }
 .about .flex-container .slogan .cta {
   margin: 5vh auto;

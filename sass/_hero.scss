@@ -33,11 +33,12 @@
         // opacity: .8;
     }
     @include md {
-        // background-size: contain;
+        background-size: cover;
         background-image: url('https://images.unsplash.com/photo-1614127938540-a1139bee1841?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80');
         position: relative;
         isolation: isolate;
         background-attachment: fixed;
+        // border: 2px solid red;
         // OVERLAY 
         &::after {
             position: absolute;
