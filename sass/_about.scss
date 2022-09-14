@@ -110,7 +110,7 @@
             flex-grow: 1;
 
             figure {
-                width: auto;
+                width: 100%;
                 // border: 1px solid yellow;
                 height: 60vh;
                 overflow: hidden;
@@ -130,6 +130,7 @@
 
                     img {
                         border-radius: $border-radius-md;
+                        object-fit: contain;
                     }
                 }
 
@@ -153,7 +154,7 @@
             }
         }
 
-        &.tile-flex-container {
+        &.reverse-flex-container {
             @include md {
                 flex-direction: row-reverse;
             }
