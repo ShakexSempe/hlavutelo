@@ -33,7 +33,11 @@
                 }
             }
             h3 {
-                opacity: .8;
+                // opacity: .8;
+                color: $overlay-blue-light;
+                @include md {
+                    font-size: 1.5rem;
+                }
             }
             p {
                 margin: 1rem 0;
@@ -177,7 +181,7 @@
                 }
                 h3 {
                     opacity: 0;
-                    letter-spacing: .1rem;
+                    letter-spacing: .05rem;
                     transition: 1.5s;
                 }
                 p {

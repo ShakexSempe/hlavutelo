@@ -319,6 +319,7 @@ header aside ul li {
   transition: 1s;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
+  opacity: 0;
 }
 header aside ul li a {
   text-transform: capitalize;
@@ -428,6 +429,7 @@ header aside.active {
 }
 header aside.active ul li {
   transform: translateX(0);
+  opacity: 1;
 }
 header aside.active ul li:nth-child(1) {
   transition-delay: 0.25s;
@@ -706,16 +708,6 @@ header.hero-header .header-cta {
 .company-info article .article-item.active-item ul li {
   letter-spacing: normal;
   opacity: 1;
-}
-.company-info article .article-item.active-item ul li:hover {
-  color: #ead2a1;
-  transition: 0.25s;
-  transition-delay: 0;
-  transform: scale(1.05);
-  font-weight: 600;
-}
-.company-info article .article-item.active-item ul li:hover::marker {
-  color: transparent;
 }
 @media (min-width: 768px) {
   .company-info {
@@ -1238,7 +1230,12 @@ header.hero-header .header-cta {
   }
 }
 .about .flex-container .slogan h3 {
-  opacity: 0.8;
+  color: #485563;
+}
+@media (min-width: 768px) {
+  .about .flex-container .slogan h3 {
+    font-size: 1.5rem;
+  }
 }
 .about .flex-container .slogan p {
   margin: 1rem 0;
@@ -1351,7 +1348,7 @@ header.hero-header .header-cta {
 }
 .about .flex-container.io-item .slogan h3 {
   opacity: 0;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   transition: 1.5s;
 }
 .about .flex-container.io-item .slogan p {
