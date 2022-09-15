@@ -813,6 +813,7 @@ header.hero-header .header-cta {
   display: block;
   opacity: 0.8;
   font-size: 0.85rem;
+  font-family: "Taviraj", serif;
 }
 @media (min-width: 768px) {
   .hero .banner .title h1 {
@@ -1233,6 +1234,7 @@ header.hero-header .header-cta {
   }
 }
 .about .flex-container .slogan h3 {
+  font-family: "Taviraj", serif;
   color: #485563;
 }
 @media (min-width: 768px) {

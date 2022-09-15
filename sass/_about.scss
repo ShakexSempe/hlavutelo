@@ -34,6 +34,7 @@
             }
             h3 {
                 // opacity: .8;
+                    font-family: $font-title;
                 color: $overlay-blue-light;
                 @include md {
                     font-size: 1.5rem;
