@@ -386,7 +386,7 @@ header aside ul li.aside-dropdown:hover button i {
   transform: rotate(180deg);
 }
 header aside ul li.aside-dropdown:hover .dropdown-content {
-  height: 30vh;
+  height: 35vh;
 }
 header aside ul li.aside-dropdown:hover .dropdown-content a {
   opacity: 1;

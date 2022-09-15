@@ -133,7 +133,7 @@ header {
                         height: 0vh;
                         transition: .5s;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: column;;
                         padding: 1rem .5rem .25rem;
 
                         a {
@@ -161,7 +161,7 @@ header {
                             }
                         }
                         .dropdown-content {
-                            height: 30vh;
+                            height: 35vh;
 
                             a {
                                 opacity: 1;
