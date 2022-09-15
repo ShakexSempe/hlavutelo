@@ -86,7 +86,7 @@ header {
                 transform: translateX(5rem);
                 transition: 1s;
                 padding-bottom: .5rem;
-                margin-bottom: 1rem;
+                margin-bottom: .5rem;
                 opacity: 0;
 
                 a {
@@ -134,7 +134,7 @@ header {
                         transition: .5s;
                         display: flex;
                         flex-direction: column;
-                        padding: 0 .5rem;
+                        padding: 1rem .5rem .25rem;
 
                         a {
                             text-transform: capitalize;
@@ -161,7 +161,7 @@ header {
                             }
                         }
                         .dropdown-content {
-                            height: 25vh;
+                            height: 30vh;
 
                             a {
                                 opacity: 1;
@@ -177,6 +177,9 @@ header {
                                 }
                                 &:nth-child(4){
                                     transition-delay: .3s;
+                                }
+                                &:nth-child(5){
+                                    transition-delay: .35s;
                                 }
                             }
                         }

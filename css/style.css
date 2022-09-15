@@ -318,7 +318,7 @@ header aside ul li {
   transform: translateX(5rem);
   transition: 1s;
   padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   opacity: 0;
 }
 header aside ul li a {
@@ -362,7 +362,7 @@ header aside ul li.aside-dropdown .dropdown-content {
   transition: 0.5s;
   display: flex;
   flex-direction: column;
-  padding: 0 0.5rem;
+  padding: 1rem 0.5rem 0.25rem;
 }
 header aside ul li.aside-dropdown .dropdown-content a {
   text-transform: capitalize;
@@ -386,7 +386,7 @@ header aside ul li.aside-dropdown:hover button i {
   transform: rotate(180deg);
 }
 header aside ul li.aside-dropdown:hover .dropdown-content {
-  height: 25vh;
+  height: 30vh;
 }
 header aside ul li.aside-dropdown:hover .dropdown-content a {
   opacity: 1;
@@ -403,6 +403,9 @@ header aside ul li.aside-dropdown:hover .dropdown-content a:nth-child(3) {
 }
 header aside ul li.aside-dropdown:hover .dropdown-content a:nth-child(4) {
   transition-delay: 0.3s;
+}
+header aside ul li.aside-dropdown:hover .dropdown-content a:nth-child(5) {
+  transition-delay: 0.35s;
 }
 header aside .contact-links {
   display: flex;
@@ -1217,7 +1220,7 @@ header.hero-header .header-cta {
 }
 @media (min-width: 768px) {
   .about .flex-container .slogan {
-    padding: 15vh 1rem 5vh;
+    padding: 0vh 1rem 5vh;
   }
 }
 .about .flex-container .slogan h2 {
