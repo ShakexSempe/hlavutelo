@@ -9,8 +9,9 @@
             padding-bottom: 15vh;
         }
         @include md {
+            // border: 2px solid red;
+            padding-bottom: 1rem;
             flex-direction: row;
-        padding-bottom: 1rem;
         }
 
         .slogan {
@@ -120,7 +121,7 @@
 
         .flex-image {
             // border: 2px solid blue;
-            flex-grow: 1;
+            // flex-grow: 1;
 
             figure {
                 width: 100%;
@@ -137,13 +138,18 @@
                     object-fit: cover;
                     transition: .5s;
                 }
+                // DESKTOP IMAGE STYLE
                 @include md {
                     // object-fit: contain;
+                    // border: 1px solid yellow;
+                    width: 100%;
+                    height: 80vh;
+
                     border-radius: $border-radius-md;
 
                     img {
                         border-radius: $border-radius-md;
-                        object-fit: contain;
+                        // object-fit: contain;
                     }
                 }
 
@@ -151,18 +157,6 @@
                     img {
                         transform: scale(1.05);
                     }
-                }
-
-                // IO CLASS
-                &.io-item {
-                    opacity: 0;
-                    transform: translateY(2rem);
-                    transition: 1.5s;
-                }
-                // ACTIVE IO
-                &.active-item {
-                    opacity: 1;
-                    transform: translateY(0);
                 }
             }
         }

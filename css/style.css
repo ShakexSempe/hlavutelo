@@ -1208,8 +1208,8 @@ header.hero-header .header-cta {
 }
 @media (min-width: 768px) {
   .about .flex-container {
-    flex-direction: row;
     padding-bottom: 1rem;
+    flex-direction: row;
   }
 }
 .about .flex-container .slogan {
@@ -1304,9 +1304,6 @@ header.hero-header .header-cta {
 .about .flex-container .slogan.active-item .cta {
   opacity: 1;
 }
-.about .flex-container .flex-image {
-  flex-grow: 1;
-}
 .about .flex-container .flex-image figure {
   width: 100%;
   height: 60vh;
@@ -1322,24 +1319,16 @@ header.hero-header .header-cta {
 }
 @media (min-width: 768px) {
   .about .flex-container .flex-image figure {
+    width: 100%;
+    height: 80vh;
     border-radius: 1rem;
   }
   .about .flex-container .flex-image figure img {
     border-radius: 1rem;
-    object-fit: contain;
   }
 }
 .about .flex-container .flex-image figure:hover img {
   transform: scale(1.05);
-}
-.about .flex-container .flex-image figure.io-item {
-  opacity: 0;
-  transform: translateY(2rem);
-  transition: 1.5s;
-}
-.about .flex-container .flex-image figure.active-item {
-  opacity: 1;
-  transform: translateY(0);
 }
 @media (min-width: 768px) {
   .about .flex-container.reverse-flex-container {
