@@ -480,7 +480,7 @@ header aside .contact-links {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 header aside .contact-links a {
   color: #ead2a1;
@@ -491,10 +491,13 @@ header aside .contact-links a {
   transition: 1s;
 }
 header aside .contact-links a i {
-  padding-right: 0.5rem;
+  width: 1.5rem;
+  font-size: 1.25em;
+  padding-bottom: 0.25rem;
   color: #f4f4f4;
   transform: translateX(-1rem);
   transition: 0.5s;
+  display: block;
 }
 header aside.active {
   left: 5vw;
@@ -561,7 +564,10 @@ header aside.active .contact-links a:nth-child(3) i {
   transition-delay: 0.95s;
 }
 header aside.active .contact-links a:hover {
-  transform: translateX(0.25rem);
+  transition: 0.25s;
+}
+header aside.active .contact-links a:hover i {
+  transform: scale(1.1);
   transition: 0.25s;
 }
 @media (max-width: 819px) {

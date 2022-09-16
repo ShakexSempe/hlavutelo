@@ -206,7 +206,7 @@ header {
             display: flex;
             flex-direction: column;
             padding-left: 1rem;
-            gap: 1rem;
+            gap: 1.5rem;
 
             a {
                 color: $span-gold;
@@ -217,11 +217,15 @@ header {
                 transition: 1s;
 
                 i {
-                    padding-right: .5rem;
+                    // padding-right: .5rem;
+                    width: 1.5rem;
+                    font-size: 1.25em;
+                    padding-bottom: .25rem;
                     color: $text-light;
                     transform: translateX(-1rem);
                     // opacity: 0;
                     transition: .5s;
+                    display: block;
                 }
             }
         }
@@ -315,8 +319,11 @@ header {
                     }
                     // LINK HOVER
                     &:hover {
-                        transform: translateX(.25rem);
                         transition: .25s;
+                        i {
+                            transform: scale(1.1);
+                            transition: .25s;
+                        }
                     }
                 }
             }
