@@ -291,13 +291,13 @@
         position: relative;
         overflow: hidden;
         isolation: isolate;
-        animation: rotate 4s linear forwards;
+        animation: rotate 5s linear forwards;
         @keyframes rotate {
-            80% {
+            70% {
                 transform: rotate(45deg) translateX(0);
             }
             100% {
-                transform: rotate(45deg) translateX(0) scale(.8);
+                transform: rotate(45deg) translateX(0) scale(.5);
             }
         }
         // BACKGROUND
