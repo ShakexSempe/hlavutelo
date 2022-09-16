@@ -97,7 +97,14 @@ body {
                     width: max-content;
                     transition: .5s;
                     isolation: isolate;
-                &::after {
+                    position: relative;
+                    span {
+                        position: absolute;
+                        transform: scale(.5);
+                        left: .5rem;
+                        top: 2rem;
+                    }
+                &::before {
                     content: '';
                     position: absolute;
                     top: 0;
@@ -123,7 +130,7 @@ body {
                 &.active-title {
                     h1 {
                         opacity: .8;
-                        &::after {
+                        &::before {
                             transform: rotate(45deg) scale(.8);
                             border-radius: $border-radius-md;
                             opacity: .2;
