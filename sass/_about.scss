@@ -53,7 +53,10 @@
             .cta {
                 // border: 2px solid yellow;
                 margin: 5vh auto;
-                display: flex;
+                // display: flex;
+                .btn {
+                    width: 12rem;
+                }
                 @media (max-width: 820px){
                     position: absolute;
                     bottom: 0;
@@ -67,20 +70,20 @@
                     gap: 1rem;
                 }
 
-                a {
-                    display: inline-block;
-                    font-size: .95rem;
-                    &.btn-primary {
-                        &::before {
-                            background: $overlay-blue-light;
-                        }
-                    }
-                    &.btn-secondary {
-                        &::before {
-                            background: $overlay-blue-darker;
-                        }
-                    }
-                }
+                // a {
+                //     display: inline-block;
+                //     font-size: .95rem;
+                //     &.btn-primary {
+                //         &::before {
+                //             background: $overlay-blue-light;
+                //         }
+                //     }
+                //     &.btn-secondary {
+                //         &::before {
+                //             background: $overlay-blue-darker;
+                //         }
+                //     }
+                // }
             }
 
             // IO CLASS
