@@ -224,7 +224,7 @@
     position: fixed;
     z-index: 5;
     bottom: 0;
-    height: 5vh;
+    height: 7vh;
     width: 100%;
     padding: 1rem 5vw;
     background: $overlay-blue-darkest;
@@ -239,12 +239,18 @@
         // border: $border-brand-md;
         a {
             transition: 1s;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: .75rem;
+            color: $brand;
+            color: $text-brand-trans;
             i {
                 font-size: 1.25rem;
-                color: $overlay-blue-light;
                 color: $brand;
                 opacity: .8;
                 transition: 1s;
+                display: grid;
+                place-items: center;
             }
         }
     }

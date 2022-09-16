@@ -206,7 +206,7 @@
   position: fixed;
   z-index: 5;
   bottom: 0;
-  height: 5vh;
+  height: 7vh;
   width: 100%;
   padding: 1rem 5vw;
   background: #0a0c0f;
@@ -224,13 +224,19 @@
 }
 .footer-nav .item a {
   transition: 1s;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #ead2a1;
+  color: rgba(233, 209, 159, 0.7);
 }
 .footer-nav .item a i {
   font-size: 1.25rem;
-  color: #485563;
   color: #ead2a1;
   opacity: 0.8;
   transition: 1s;
+  display: grid;
+  place-items: center;
 }
 .footer-nav.active-footer {
   transform: translateY(0);
