@@ -206,9 +206,10 @@
   position: fixed;
   z-index: 5;
   bottom: 0;
-  height: 7vh;
+  height: auto;
   width: 100%;
-  padding: 1rem 5vw;
+  padding: 0.5rem 5vw;
+  padding: 0.5rem 0;
   background: #0a0c0f;
   background: linear-gradient(0deg, #0a0c0f, #20262e);
   display: flex;
