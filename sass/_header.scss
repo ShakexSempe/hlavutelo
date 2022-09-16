@@ -85,22 +85,35 @@ header {
                 // height: 100%;
                 transform: translateX(5rem);
                 transition: 1s;
-                padding-bottom: .5rem;
+                padding-bottom: .25rem;
+                padding-right: 1rem;
                 margin-bottom: .5rem;
                 opacity: 0;
+                // border: 1px solid green;
 
                 a {
                     text-transform: capitalize;
                     color: #f4f4f4;
                     padding: .5rem;
                     text-decoration: none;
+                    // border: 1px solid red;
+                    width: 100%;
+                    // display
+
+                    i {
+                        float: right;
+                        margin: 0 auto;
+                        color: $brand;
+                        // border: 1px solid yellow;
+                        // width: 2rem;
+                    }
                 }
 
                 &.aside-dropdown {
                     // border: 1px solid blue;
                     border: none;
                     border-bottom: 1px solid $brand;
-                    padding: 0 0 .5rem 0;
+                    // padding: 0 0 0rem 0;
                     position: relative;
                     display: flex;
                     flex-direction: column;
@@ -123,7 +136,8 @@ header {
                         padding: .5rem;
 
                         i {
-                            width: 3rem;
+                            // width: 3rem;
+                            // border: 1px solid yellow;
                             transition: .25s;
                             color: $brand;
                         }
@@ -387,7 +401,7 @@ header {
             letter-spacing: .025rem;
 
             i {
-                padding-right: .5rem;
+                padding-left: .5rem;
                 opacity: .8;
             }
         }
