@@ -458,7 +458,7 @@
           </div>
         </div>
         <div id="form" class="contact-form">
-          <form  action="">
+          <form  action="https://formsubmit.co/info@hlavutelotrading.co.za" method="POST">
             <div class="form-title">
               <h1>make enquiry</h1>
               <p>Leave your details and enquiry.</p>
@@ -468,13 +468,17 @@
                 <input type="text" minlength="2" id="name" name="name" tabindex="1" placeholder="First & last name" required>
               </label>
               <label for="email">email
-                <input type="email" id="email" name="email" tabindex="2" placeholder="Your email address" required>
+                <input type="email" id="email" name="email" tabindex="2" placeholder="Email Address" required>
               </label>
               <label for="enquiry">enquiry
                 <textarea name="enquiry" id="enquiry" cols="10" tabindex="3" placeholder="Leave your enquiry here.." rows="5"></textarea>
               </label>
             </fieldset>
             <button class="submit-btn" tabindex="4">submit form<i class="fa-solid fa-angles-right cta-i"></i></button>
+            <!-- FORM OPTIONS -->
+            <input type="hidden" name="_autoresponse" value="Hlavutelo has received your form">
+            <input type="hidden" name="_subject" value="New Form submission">
+            <input type="hidden" name="_template" value="table">
           </form>
         </div>
       </div>
