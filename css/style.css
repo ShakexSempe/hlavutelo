@@ -265,11 +265,13 @@
   animation: rotate 5s linear forwards;
 }
 @keyframes rotate {
-  70% {
+  80% {
     transform: rotate(45deg) translateX(0);
+    opacity: 1;
   }
   100% {
-    transform: rotate(45deg) translateX(0) scale(0.5);
+    transform: rotate(45deg) translateX(0) scale(0.8);
+    opacity: 0;
   }
 }
 .loader_bg .loader::after {

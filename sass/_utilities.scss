@@ -293,11 +293,13 @@
         isolation: isolate;
         animation: rotate 5s linear forwards;
         @keyframes rotate {
-            70% {
+            80% {
                 transform: rotate(45deg) translateX(0);
+                opacity: 1;
             }
             100% {
-                transform: rotate(45deg) translateX(0) scale(.5);
+                transform: rotate(45deg) translateX(0) scale(.8);
+                opacity: 0;
             }
         }
         // BACKGROUND
