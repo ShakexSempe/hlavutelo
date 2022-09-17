@@ -834,6 +834,55 @@ header.hero-header .header-cta {
   }
 }
 
+.projects .projects-container {
+  padding: 5vh 0;
+}
+.projects .projects-container h2 {
+  text-transform: capitalize;
+  position: sticky;
+  top: 7vh;
+  background: #fff;
+  color: #20262e;
+  font-family: "Taviraj", serif;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+}
+.projects .projects-container .grid-container {
+  display: grid;
+  gap: 5vh;
+  padding: 5vh 0;
+}
+@media (min-width: 576px) {
+  .projects .projects-container .grid-container {
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 820px) {
+  .projects .projects-container .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.projects .projects-container .grid-container .grid-item {
+  width: 100%;
+  height: 70vh;
+}
+.projects .projects-container .grid-container .grid-item figure {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.projects .projects-container .grid-container .grid-item figure figcaption {
+  font-family: "Taviraj", serif;
+  margin: 0.5rem;
+}
+.projects .projects-container .grid-container .grid-item figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
 .hero {
   width: 100%;
   padding: 8vh 0;

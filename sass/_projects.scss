@@ -1,0 +1,54 @@
+.projects {
+    // border: 2px solid red;
+
+    .projects-container {
+        // border: 1px solid blue;
+        padding: 5vh 0;
+
+        h2 {
+            text-transform: capitalize;
+            position: sticky;
+            top: 7vh;
+            background: #fff;
+            color: $overlay-blue-darker;
+            font-family: $font-title;
+            padding: .5rem 0;
+            font-size: 1.25rem;
+        }
+        .grid-container {
+            display: grid;
+            gap: 5vh;
+            @include sm {
+                gap: .5rem;
+                grid-template-columns: 1fr 1fr;
+            }
+            @include lg {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            padding: 5vh 0;
+
+            .grid-item {
+                width: 100%;
+                height: 70vh;
+
+                figure {
+                    overflow: hidden;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: .5rem;
+
+                    figcaption {
+                        font-family: $font-title;
+                        margin: .5rem;
+                    }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: .5rem;
+                }
+            }
+            }
+        }
+    }
+}
