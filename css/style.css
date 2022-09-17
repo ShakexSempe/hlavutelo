@@ -581,44 +581,77 @@ header .navbar ul {
   border-radius: 0.5rem;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   gap: 1rem;
   list-style: none;
   padding: 0.25rem 0.5rem;
-  position: absolute;
-  top: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
 }
 header .navbar ul li {
   text-transform: capitalize;
 }
 header .navbar ul li a {
-  font-family: "Taviraj", serif;
   letter-spacing: 0.025rem;
   color: #f4f4f4;
   text-decoration: none;
   transition: 0.25s;
   position: relative;
 }
-header .navbar ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 25%;
-  opacity: 0;
-  height: 0.1rem;
-  background-color: #ead2a1;
-  transform: translateX(-50%);
+header .navbar ul .dropdown .dropdown-btn {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  cursor: pointer;
   transition: 0.25s;
 }
-header .navbar ul li a:hover {
+header .navbar ul .dropdown .dropdown-content {
+  background: linear-gradient(0deg, #0a0c0f, #20262e);
+  position: absolute;
+  top: 6vh;
+  left: 0;
+  width: max-content;
+  height: 0vh;
+  overflow: hidden;
+  border-radius: 0;
+  padding: 0 0.5rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: 0.5s;
+}
+header .navbar ul .dropdown .dropdown-content a {
+  display: block;
+  padding-bottom: 0.5rem;
+  transition: 0.25s;
+  opacity: 0;
+}
+header .navbar ul .dropdown .dropdown-content a:hover {
   color: #ead2a1;
+  transition: 0.1s;
+}
+header .navbar ul .dropdown:hover .dropdown-btn {
+  color: #fff5;
+}
+header .navbar ul .dropdown:hover .dropdown-content {
+  height: 30vh;
+}
+header .navbar ul .dropdown:hover .dropdown-content a {
   opacity: 1;
 }
-header .navbar ul li a:hover::after {
-  width: 70%;
-  opacity: 1;
+header .navbar ul .dropdown:hover .dropdown-content a:nth-child(1) {
+  transition-delay: 0.25s;
+}
+header .navbar ul .dropdown:hover .dropdown-content a:nth-child(2) {
+  transition-delay: 0.3s;
+}
+header .navbar ul .dropdown:hover .dropdown-content a:nth-child(3) {
+  transition-delay: 0.35s;
+}
+header .navbar ul .dropdown:hover .dropdown-content a:nth-child(4) {
+  transition-delay: 0.4s;
+}
+header .navbar ul .dropdown:hover .dropdown-content a:nth-child(5) {
+  transition-delay: 0.45s;
 }
 header .header-cta {
   transform: translateY(0);
