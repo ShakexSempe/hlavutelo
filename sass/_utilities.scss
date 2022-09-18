@@ -279,7 +279,7 @@
 
     .loader {
         position: absolute;
-        top: 7vh;
+        top: 1rem;
         left: 7vw;
         // margin: 0 auto;
         // border: 2px solid $brand-blue;
@@ -294,7 +294,6 @@
         animation: rotate 5s linear forwards;
         @keyframes rotate {
             80% {
-                transform: rotate(45deg) translateX(0);
                 opacity: 1;
             }
             100% {
