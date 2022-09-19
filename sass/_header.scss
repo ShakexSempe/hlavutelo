@@ -511,6 +511,16 @@ header {
                         color: $text-dark;
                         }
                     }
+                    .dropdown {
+                        .dropdown-btn {
+                            color: inherit;
+                        }
+                        .dropdown-content {
+                            a {
+                            color: $text-light;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -722,6 +722,12 @@ header.hero-header .logo {
   header.hero-header .navbar ul li a {
     color: #29323c;
   }
+  header.hero-header .navbar ul .dropdown .dropdown-btn {
+    color: inherit;
+  }
+  header.hero-header .navbar ul .dropdown .dropdown-content a {
+    color: #f4f4f4;
+  }
 }
 header.hero-header .header-cta {
   transform: translateY(-10vh);
