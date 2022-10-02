@@ -1,0 +1,70 @@
+.gallery {
+    border: 2px solid red;
+    width: 100%;
+    // BUTTON CONTAINER 
+    .btn-container {
+        border: 2px solid blue;
+        margin: 5vh auto;
+        padding: 1rem .25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        // BUTTONS
+        .filter-btn {
+            padding: .25rem .5rem;
+            border-radius: $border-radius-sm;
+            border: $border-dark-sm;
+            text-transform: capitalize;
+        }
+    }
+
+    .gallery-center {
+        border: 2px solid blue;
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        @include sm {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include md {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .gallery-item {
+            border: 1px solid green;
+            width: 100%;
+            
+            img {
+                border-radius: $border-radius-sm;
+                width: 100%;
+                height: auto;
+                @include sm {
+                    height: 50vh;
+                }
+                @include lg {
+                    height: 70vh;
+                }
+            }
+
+            .item-info {
+                @include md {
+                    text-align: center;
+                }
+                .item-title {
+                    text-transform: capitalize;
+                    padding: .5rem 0;
+                    font-size: 1rem;
+                }
+                .title-info {
+                    margin: .2rem 0;
+                }
+
+                .item-text {
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+
+}
