@@ -55,7 +55,8 @@ $btn-brand-light: linear-gradient( 90deg, $overlay-blue-darkest, $overlay-blue-l
 $btn-brand-light-hover: linear-gradient( 90deg, $overlay-blue-light, $overlay-blue-darkest);
 $btn-brand-hover: linear-gradient( -90deg, hsl(40, 63%, 60%) 20%, hsl(40, 63%, 50%));
 $btn-brand-hover: linear-gradient( -90deg, hsl(214, 18%, 0%) 20%, $overlay-blue-darker);
-
+$btn-filter: linear-gradient(#eee, #ddd);
+$btn-filter-hover: linear-gradient(#ddd, #eee);
 // BORDER-RADIUS
 $border-radius-xsm: .25rem;
 $border-radius-sm: .5rem;

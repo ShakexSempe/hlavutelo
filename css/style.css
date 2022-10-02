@@ -854,6 +854,14 @@ header.hero-header .header-cta {
   border-radius: 0.5rem;
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
   text-transform: capitalize;
+  background: linear-gradient(#eee, #ddd);
+  transition: 0.25s;
+  display: block;
+}
+.gallery .btn-container .filter-btn:hover, .gallery .btn-container .filter-btn:focus {
+  background: linear-gradient(#ddd, #eee);
+  cursor: pointer;
+  transform: scale(0.98);
 }
 .gallery .gallery-center {
   width: 100%;

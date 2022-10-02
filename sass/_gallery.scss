@@ -18,6 +18,14 @@
             border-radius: $border-radius-sm;
             border: $border-dark-sm;
             text-transform: capitalize;
+            background: $btn-filter;
+            transition: .25s;
+            display: block;
+            &:hover, &:focus {
+                background: $btn-filter-hover;
+                cursor: pointer;
+                transform: scale(.98);
+            }
         }
     }
 
