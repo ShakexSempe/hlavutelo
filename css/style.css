@@ -844,10 +844,13 @@ header.hero-header .header-cta {
 }
 .gallery .btn-container {
   margin: 5vh auto;
-  padding: 1rem 0.25rem;
+  padding: 0.5rem 0.25rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  position: sticky;
+  top: 7vh;
+  background: #fafafa;
 }
 .gallery .btn-container .filter-btn {
   padding: 0.25rem 0.5rem;
