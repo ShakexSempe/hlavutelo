@@ -40,12 +40,12 @@ const heroObserver = new IntersectionObserver(
             if(!entry.isIntersecting) {
                 console.log("Her NOT io");
                 header.classList.remove('hero-header');
-                homebtn.classList.add('active');
+                // homebtn.classList.add('active');
                 footerNav.classList.add('active-footer');
             } else {
                 console.log("hero IS io");
                 header.classList.add('hero-header');
-                homebtn.classList.remove('active');
+                // homebtn.classList.remove('active');
                 footerNav.classList.remove('active-footer');
             }
         });

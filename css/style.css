@@ -840,11 +840,9 @@ header.hero-header .header-cta {
 }
 
 .gallery {
-  border: 2px solid red;
   width: 100%;
 }
 .gallery .btn-container {
-  border: 2px solid blue;
   margin: 5vh auto;
   padding: 1rem 0.25rem;
   display: flex;
@@ -858,7 +856,6 @@ header.hero-header .header-cta {
   text-transform: capitalize;
 }
 .gallery .gallery-center {
-  border: 2px solid blue;
   width: 100%;
   overflow: hidden;
   display: grid;
@@ -876,7 +873,6 @@ header.hero-header .header-cta {
   }
 }
 .gallery .gallery-center .gallery-item {
-  border: 1px solid green;
   width: 100%;
 }
 .gallery .gallery-center .gallery-item img {
