@@ -856,15 +856,43 @@ header.hero-header .header-cta {
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
+  border: none;
   text-transform: capitalize;
   background: linear-gradient(#eee, #ddd);
+  cursor: pointer;
   transition: 0.25s;
   display: block;
+  isolation: isolate;
+  position: relative;
 }
-.gallery .btn-container .filter-btn:hover, .gallery .btn-container .filter-btn:focus {
+.gallery .btn-container .filter-btn::after, .gallery .btn-container .filter-btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  transition: 0.25s;
+  z-index: -1;
+}
+.gallery .btn-container .filter-btn::before {
+  background: linear-gradient(#eee, #ddd);
+}
+.gallery .btn-container .filter-btn::after {
+  opacity: 0;
   background: linear-gradient(#ddd, #eee);
-  cursor: pointer;
-  transform: scale(0.98);
+  background: linear-gradient(-90deg, black 20%, #20262e);
+}
+.gallery .btn-container .filter-btn:hover, .gallery .btn-container .filter-btn:active, .gallery .btn-container .filter-btn:focus {
+  transform: scale(0.95);
+  color: #ead2a1;
+}
+.gallery .btn-container .filter-btn:hover::before, .gallery .btn-container .filter-btn:active::before, .gallery .btn-container .filter-btn:focus::before {
+  opacity: 0;
+}
+.gallery .btn-container .filter-btn:hover::after, .gallery .btn-container .filter-btn:active::after, .gallery .btn-container .filter-btn:focus::after {
+  opacity: 1;
 }
 .gallery .gallery-center {
   width: 100%;
