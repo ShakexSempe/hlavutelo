@@ -71,6 +71,30 @@ const menu = [
         desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
         saepe, odio totam sunt ab ratione sit vel ex`,
     },
+    {
+        id: 10,
+        title: "building construction",
+        category: "building",
+        img: "../img/building-1.jpg",
+        desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        saepe, odio totam sunt ab ratione sit vel ex`,
+    },
+    {
+        id: 11,
+        title: "building construction",
+        category: "building",
+        img: "../img/building-2.jpg",
+        desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        saepe, odio totam sunt ab ratione sit vel ex`,
+    },
+    {
+        id: 12,
+        title: "building construction",
+        category: "building",
+        img: "../img/building-3.jpg",
+        desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        saepe, odio totam sunt ab ratione sit vel ex`,
+    },
 ];
 
 const galleryCenter = document.querySelector('.gallery-center');
@@ -92,7 +116,7 @@ displayMenuItems = (menuItems) => {
                 <h2>${item.title}</h2>
                 <p class="title-info">${item.category}</p>
             </div>
-            <p class="item-text">${item.desc}</p>
+            
         </div>
     </article>`
     });
