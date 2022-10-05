@@ -852,6 +852,11 @@ header.hero-header .header-cta {
   top: 7vh;
   background: #fafafa;
 }
+@media (min-width: 768px) {
+  .gallery .btn-container {
+    padding: 1rem 0;
+  }
+}
 .gallery .btn-container .filter-btn {
   font-size: 0.7rem;
   padding: 0.25rem 0.5rem;
@@ -865,6 +870,11 @@ header.hero-header .header-cta {
   display: block;
   isolation: isolate;
   position: relative;
+}
+@media (min-width: 768px) {
+  .gallery .btn-container .filter-btn {
+    font-size: 1rem;
+  }
 }
 .gallery .btn-container .filter-btn::after, .gallery .btn-container .filter-btn::before {
   position: absolute;
@@ -900,7 +910,7 @@ header.hero-header .header-cta {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 10vh;
 }
 @media (min-width: 576px) {
   .gallery .gallery-center {

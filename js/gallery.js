@@ -142,7 +142,6 @@ window.addEventListener('DOMContentLoaded', () => {
 displayMenuItems = (menuItems) => {
     let displayMenu = menuItems.map(item => {
         return `<article class="gallery-item">
-        <img src=${item.img} class="photo" alt="menu item">
         <div class="item-info">
             <div class="item-title">
                 <h2>${item.title}</h2>
@@ -150,6 +149,8 @@ displayMenuItems = (menuItems) => {
             </div>
             
         </div>
+        <img src=${item.img} class="photo" alt="menu item">
+
     </article>`
     });
 
