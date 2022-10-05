@@ -853,6 +853,7 @@ header.hero-header .header-cta {
   background: #fafafa;
 }
 .gallery .btn-container .filter-btn {
+  font-size: 0.7rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.5rem;
   border: 0.105rem solid rgba(0, 0, 0, 0.7);

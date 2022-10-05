@@ -95,6 +95,38 @@ const menu = [
         desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
         saepe, odio totam sunt ab ratione sit vel ex`,
     },
+    {
+        id: 13,
+        title: "building construction",
+        category: "building",
+        img: "../img/building-4.jpg",
+        desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        saepe, odio totam sunt ab ratione sit vel ex`,
+    },
+    {
+        id: 14,
+        title: "building construction",
+        category: "building",
+        img: "../img/building-5.jpg",
+        desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        saepe, odio totam sunt ab ratione sit vel ex`,
+    },
+    {
+        id: 15,
+        title: "paving",
+        category: "paving",
+        img: "../img/paving-1.jpg",
+        desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        saepe, odio totam sunt ab ratione sit vel ex`,
+    },
+    {
+        id: 16,
+        title: "paving",
+        category: "paving",
+        img: "../img/paving-2.jpg",
+        desc: `rem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        saepe, odio totam sunt ab ratione sit vel ex`,
+    },
 ];
 
 const galleryCenter = document.querySelector('.gallery-center');
