@@ -1531,25 +1531,27 @@ header.hero-header .header-cta {
 }
 @media (min-width: 768px) {
   .about .flex-container .slogan {
-    padding: 0vh 1rem 5vh;
-  }
-}
-.about .flex-container .slogan h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-@media (min-width: 768px) {
-  .about .flex-container .slogan h2 {
-    font-size: 2.5rem;
+    padding: 10vh 1rem 5vh;
   }
 }
 .about .flex-container .slogan h3 {
+  font-size: 1rem;
   font-family: "Taviraj", serif;
   color: #485563;
 }
 @media (min-width: 768px) {
   .about .flex-container .slogan h3 {
     font-size: 1.5rem;
+  }
+}
+.about .flex-container .slogan .slogan-p {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .about .flex-container .slogan .slogan-p {
+    font-size: 2.25rem;
   }
 }
 .about .flex-container .slogan p {
@@ -1579,33 +1581,6 @@ header.hero-header .header-cta {
   .about .flex-container .slogan .cta {
     gap: 1rem;
   }
-}
-.about .flex-container .slogan.io-item h2 {
-  opacity: 0;
-  transition: 1s;
-}
-.about .flex-container .slogan.io-item p {
-  transform: translateY(1rem);
-  opacity: 0;
-  transition: 1s;
-  transition-delay: 0.5s;
-}
-@media (min-width: 768px) {
-  .about .flex-container .slogan.io-item .cta {
-    opacity: 0;
-    transition: 1s;
-    transition-delay: 1.25s;
-  }
-}
-.about .flex-container .slogan.active-item h2 {
-  opacity: 1;
-}
-.about .flex-container .slogan.active-item p {
-  opacity: 1;
-  transform: translateY(0);
-}
-.about .flex-container .slogan.active-item .cta {
-  opacity: 1;
 }
 .about .flex-container .flex-image figure {
   width: 100%;
@@ -1638,13 +1613,13 @@ header.hero-header .header-cta {
     flex-direction: row-reverse;
   }
 }
-.about .flex-container.io-item .slogan h2 {
-  opacity: 0;
-  transition: 1.5s;
-}
 .about .flex-container.io-item .slogan h3 {
   opacity: 0;
   letter-spacing: 0.05rem;
+  transition: 1.5s;
+}
+.about .flex-container.io-item .slogan .slogan-p {
+  transform: translateY(0);
   transition: 1.5s;
 }
 .about .flex-container.io-item .slogan p {
@@ -1657,12 +1632,11 @@ header.hero-header .header-cta {
   opacity: 0;
   transition: 1.5s;
 }
-.about .flex-container.active-item .slogan h2 {
-  opacity: 1;
-}
 .about .flex-container.active-item .slogan h3 {
-  opacity: 0.8;
+  opacity: 1;
   letter-spacing: normal;
+}
+.about .flex-container.active-item .slogan .slogan-p {
   transition-delay: 0.5s;
 }
 .about .flex-container.active-item .slogan p {
@@ -1798,7 +1772,7 @@ body {
   z-index: 1;
   width: 80%;
 }
-.container main section .section-title h1 {
+.container main section .section-title h2 {
   border: 0.105rem solid rgba(0, 0, 0, 0.7);
   border-color: transparent;
   border-radius: 0.5rem;
@@ -1816,13 +1790,13 @@ body {
   isolation: isolate;
   position: relative;
 }
-.container main section .section-title h1 span {
+.container main section .section-title h2 span {
   position: absolute;
   transform: scale(0.5);
   left: 0.5rem;
   top: 2rem;
 }
-.container main section .section-title h1::before {
+.container main section .section-title h2::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1835,19 +1809,19 @@ body {
   transition: 1s;
 }
 @media (min-width: 768px) {
-  .container main section .section-title h1::before {
+  .container main section .section-title h2::before {
     width: 10%;
   }
 }
 @media (min-width: 576px) {
-  .container main section .section-title h1 {
+  .container main section .section-title h2 {
     font-size: 2.5rem;
   }
 }
-.container main section .section-title.active-title h1 {
+.container main section .section-title.active-title h2 {
   opacity: 0.8;
 }
-.container main section .section-title.active-title h1::before {
+.container main section .section-title.active-title h2::before {
   transform: rotate(45deg) scale(0.8);
   border-radius: 1rem;
   opacity: 0.2;

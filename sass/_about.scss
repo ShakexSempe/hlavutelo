@@ -22,23 +22,22 @@
             overflow: hidden;
             @include md {
                 // text-align: right;
-                padding: 0vh 1rem 5vh;
-            }
-
-            h2 {
-                font-size: 2rem;
-                margin-bottom: .5rem;
-                @include md {
-                    // text-align: center;
-                    font-size: 2.5rem;
-                }
+                padding: 10vh 1rem 5vh;
             }
             h3 {
-                // opacity: .8;
-                    font-family: $font-title;
+                font-size: 1rem;
+                font-family: $font-title;
                 color: $overlay-blue-light;
                 @include md {
                     font-size: 1.5rem;
+                }
+            }
+            .slogan-p {
+                text-transform: capitalize;
+                font-size: 1.8rem;
+                font-weight: 600;
+                @include md {
+                    font-size: 2.25rem;
                 }
             }
             p {
@@ -86,40 +85,6 @@
                 // }
             }
 
-            // IO CLASS
-            &.io-item {
-                h2 {
-                    opacity: 0;
-                    transition: 1s;
-                }
-
-                p {
-                    transform: translateY(1rem);
-                    opacity: 0;
-                    transition: 1s;
-                    transition-delay: .5s;
-                }
-                @include md {
-                    .cta {
-                        opacity: 0;
-                        transition: 1s;
-                        transition-delay: 1.25s;
-                    }
-                }
-            }
-            // IO ACTIVE CLASS
-            &.active-item {
-                h2 {
-                    opacity: 1;
-                }
-                p {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-                .cta {
-                    opacity: 1;
-                }
-            }
         }
 
         .flex-image {
@@ -173,20 +138,19 @@
         // IO CLASSES
         &.io-item {
             .slogan {
-                h2 {
-                    opacity: 0;
-                    transition: 1.5s;
-                }
                 h3 {
                     opacity: 0;
                     letter-spacing: .05rem;
                     transition: 1.5s;
                 }
+                .slogan-p {
+                    transform: translateY(0);
+                    transition: 1.5s;
+                }
                 p {
                     opacity: 0;
                     transform: translateY(1.5rem);
-                    transition: 1.5s;
-                }
+                    transition: 1.5s;                }
             }
 
             .flex-image {
@@ -198,13 +162,13 @@
         // IO ACTIVE
         &.active-item {
             .slogan {
-                h2 {
-                    opacity: 1;
-                }
                 h3 {
-                    opacity: .8;
+                    opacity: 1;
                     letter-spacing: normal;
+                }
+                .slogan-p {
                     transition-delay: .5s;
+                    // opacity: .7;
                 }
                 p {
                     opacity: 1;

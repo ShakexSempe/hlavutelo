@@ -82,7 +82,7 @@ body {
                 @include md {
                     // top: 9vh;
                 }
-                h1 {
+                h2 {
                     border: $border-dark-sm;
                     border-color: transparent;
                     border-radius: $border-radius-sm;
@@ -130,7 +130,7 @@ body {
                 }
 
                 &.active-title {
-                    h1 {
+                    h2 {
                         opacity: .8;
                         &::before {
                             transform: rotate(45deg) scale(.8);
