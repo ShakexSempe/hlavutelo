@@ -477,6 +477,9 @@ header {
             &:hover {
                 // transform: scale(.98);
                 transition: .25s;
+                @include md {
+                    background: $overlay-blue-dark;
+                }
                 a {
                     transition: .25s;
 

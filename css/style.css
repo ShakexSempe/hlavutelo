@@ -690,6 +690,11 @@ header .header-cta a i {
 header .header-cta:hover {
   transition: 0.25s;
 }
+@media (min-width: 768px) {
+  header .header-cta:hover {
+    background: #29323c;
+  }
+}
 header .header-cta:hover a {
   transition: 0.25s;
 }
