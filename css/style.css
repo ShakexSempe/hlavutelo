@@ -1520,6 +1520,7 @@ header.hero-header .header-cta {
   .about .flex-container {
     padding-bottom: 1rem;
     flex-direction: row;
+    margin: 5vh auto;
   }
 }
 .about .flex-container .slogan {
@@ -1645,6 +1646,11 @@ header.hero-header .header-cta {
   transform: translateY(0);
   opacity: 1;
   transition-delay: 1.5s;
+}
+@media (min-width: 768px) {
+  .about .flex-container.active-item .flex-image {
+    transition-delay: 0s;
+  }
 }
 
 footer {
