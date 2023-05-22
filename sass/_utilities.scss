@@ -61,18 +61,17 @@
     display: flex;
     position: relative;
     width: 11rem;
-    padding: 1rem;
+    padding: .85rem 1rem;
     color: $text-light;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
-    text-align: center;
+    // text-align: center;
+    border: none;
+    border-radius: $border-radius-sm;
     text-transform: capitalize;
-    letter-spacing: .05rem;
     transition: .25s;
     isolation: isolate;
-    border: .125rem solid transparent;
-    border-radius: $border-radius-sm;
 
     
 
@@ -91,13 +90,11 @@
     &::before {
         background: $btn-brand-light;
         box-shadow: none;
-        border: $border-brand-md;
     }
     &::after {
         background: $btn-brand-light-hover;
         box-shadow: none;
         opacity: 0;
-        border: $border-light-md;
     }
 
     @media (max-width: 820px){

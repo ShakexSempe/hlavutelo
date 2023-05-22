@@ -1,7 +1,4 @@
 .hero {
-    * {
-        // border: 2px solid blue;
-    }
     width: 100%;
     padding: 1rem 0 1rem;
     min-height: 100vh;
@@ -61,8 +58,11 @@
         border-radius: $border-radius-sm;
         background: #fff;
         margin-left: 5vw;
-        // position: relative;
-        // top: 10vh;
+
+        @include lg {
+            width: 8rem;
+            height: 8rem;
+        }
 
         img {
             // display: none;
@@ -71,55 +71,40 @@
         }
     }
     .banner {
-        // position: relative;
-        // top: 10vh;
+        // border: 2px solid red;
         padding: 0 5vw;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 5vh;
         @include md {
             top: 20vh;
-            width: 50%;
         }
         
         // TITLE = H1 + P
         .title {
-            color: $brand;
             color: $text-dark;
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.25rem;
+                font-size: clamp(2.25rem, 4vw, 2.5rem);
                 text-transform: capitalize;
-                margin-bottom: .5rem;
+                margin-bottom: 1rem;
             }
             p {
                 text-transform: capitalize;
-                color: inherit;
-                line-height: 1.5;
+                line-height: 1.4;
+                font-weight: 500;
+                font-size: 1rem;
+                font-size: clamp(1rem, 1vw, 1.05rem);
                 span {
                     display: block;
                     opacity: .8;
+                    margin: .25rem 0 1rem;
                     font-size: .85rem;
-                    font-family: $font-title;
-                }
-            }
-            @include md {
-                // border: 1px solid #0003;
-                // padding: .5rem;
-                // border-radius: .5rem;
-                h1 {
-                    font-size: 3rem;
-                }
-
-                p {
-                    font-size: 1.25rem;
-                    span {
-                        font-size: 1rem;
-                    }
+                    // font-family: $font-title;
                 }
             }
         }
         // CTA BUTTON
         .cta {
-            margin-top: 1.5rem;
         }
     }
 }
