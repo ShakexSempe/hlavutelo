@@ -205,34 +205,59 @@
   height: auto;
   width: 100%;
   padding: 0.5rem 5vw;
-  padding: 0.5rem 0;
   background: #0a0c0f;
   background: linear-gradient(0deg, #0a0c0f, #20262e);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  transform: translateY(8vh);
+  transform: translateY(10vh);
   transition: 0.5s;
+  cursor: default;
 }
 @media (min-width: 768px) {
   .footer-nav {
     display: none;
   }
 }
+.footer-nav .item {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  transition: 0.25s;
+  position: relative;
+  isolation: isolate;
+}
+.footer-nav .item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #404040;
+  opacity: 0;
+  border-radius: 0.25rem;
+  z-index: -1;
+  transition: 0.125s;
+  transform: scaleX(0);
+}
 .footer-nav .item a {
   transition: 1s;
   text-transform: capitalize;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #f4f4f4;
+  padding: 0.25rem 1rem;
+  cursor: default;
 }
 .footer-nav .item a i {
   font-size: 1.05rem;
   color: #f4f4f4;
   opacity: 0.8;
   transition: 1s;
-  display: grid;
-  place-items: center;
+}
+.footer-nav .item:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
 }
 .footer-nav.active-footer {
   transform: translateY(0);
@@ -1267,31 +1292,37 @@ header.hero-header .header-cta {
   transition-delay: calc(1s + .25s * var(--i));
 }
 
-.contact .contact-container {
+#contact {
+  background-color: #f4f4f4;
+}
+#contact .contact-container {
   border: 0.105rem solid rgba(255, 255, 255, 0.2);
   margin-top: 5vh;
   border-radius: 0.5rem;
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
 }
 @media (min-width: 768px) {
-  .contact .contact-container {
+  #contact .contact-container {
     margin-top: 10vh;
-    display: flex;
     justify-content: space-around;
     gap: 1rem;
   }
 }
-.contact .contact-container .contact-item {
+#contact .contact-container .contact-item {
   margin: 0.5rem 0;
   padding: 1rem 0.5rem;
   border-radius: 0.5rem;
-  background: #ededed;
+  background: #fff;
   display: flex;
   align-items: center;
   overflow: hidden;
+  box-shadow: 0 0.5rem 0.5rem #0001;
 }
 @media (min-width: 768px) {
-  .contact .contact-container .contact-item {
+  #contact .contact-container .contact-item {
     flex-grow: 1;
     border-radius: 0.5rem;
     border-color: #29323c;
@@ -1299,12 +1330,12 @@ header.hero-header .header-cta {
     margin-bottom: 0;
   }
 }
-.contact .contact-container .contact-item .contact-icon {
+#contact .contact-container .contact-item .contact-icon {
   width: 3rem;
   overflow: hidden;
   position: relative;
 }
-.contact .contact-container .contact-item .contact-icon::after, .contact .contact-container .contact-item .contact-icon::before {
+#contact .contact-container .contact-item .contact-icon::after, #contact .contact-container .contact-item .contact-icon::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1319,39 +1350,39 @@ header.hero-header .header-cta {
   transition: 0.5s;
   color: #485563;
 }
-.contact .contact-container .contact-item .contact-icon.phone-icon::before {
+#contact .contact-container .contact-item .contact-icon.phone-icon::before {
   content: "";
 }
-.contact .contact-container .contact-item .contact-icon.phone-icon::after {
+#contact .contact-container .contact-item .contact-icon.phone-icon::after {
   content: "";
   opacity: 0;
   transform: translateX(-0.25rem);
 }
-.contact .contact-container .contact-item .contact-icon.email-icon::before {
+#contact .contact-container .contact-item .contact-icon.email-icon::before {
   content: "";
 }
-.contact .contact-container .contact-item .contact-icon.email-icon::after {
+#contact .contact-container .contact-item .contact-icon.email-icon::after {
   content: "";
   opacity: 0;
   transform: translateX(-0.25rem);
 }
-.contact .contact-container .contact-item .contact-icon.social-icon::before {
+#contact .contact-container .contact-item .contact-icon.social-icon::before {
   content: "";
   font-family: "Font Awesome 6 Brands";
 }
-.contact .contact-container .contact-item .contact-icon.social-icon::after {
+#contact .contact-container .contact-item .contact-icon.social-icon::after {
   content: "";
   font-family: "Font Awesome 6 Brands";
   opacity: 0;
   transform: translateX(-0.25rem);
 }
-.contact .contact-container .contact-item .contact-icon i {
+#contact .contact-container .contact-item .contact-icon i {
   opacity: 0;
   font-size: 2rem;
   font-weight: 900;
   color: #485563;
 }
-.contact .contact-container .contact-item .contact-info h2 {
+#contact .contact-container .contact-item .contact-info h2 {
   font-size: 1.25rem;
   text-transform: capitalize;
   font-weight: 600;
@@ -1359,7 +1390,7 @@ header.hero-header .header-cta {
   margin-bottom: 0.25rem;
   transition: 0.5s;
 }
-.contact .contact-container .contact-item .contact-info a {
+#contact .contact-container .contact-item .contact-info a {
   display: block;
   text-decoration: none;
   color: #f4f4f4;
@@ -1368,58 +1399,59 @@ header.hero-header .header-cta {
   position: relative;
   transition: 0.5s;
 }
-.contact .contact-container .contact-item:hover {
-  background: #f4f4f4;
+#contact .contact-container .contact-item:hover {
   transition: 0.25s;
+  transform: scale(0.99);
+  box-shadow: 0 0.25rem 0.25rem #0002;
 }
-.contact .contact-container .contact-item:hover .contact-icon::before {
+#contact .contact-container .contact-item:hover .contact-icon::before {
   opacity: 0;
   transform: translateX(-0.25rem);
 }
-.contact .contact-container .contact-item:hover .contact-icon::after {
+#contact .contact-container .contact-item:hover .contact-icon::after {
   opacity: 1;
   transform: translateX(0);
 }
-.contact .contact-container .contact-item:hover .contact-info h2 {
+#contact .contact-container .contact-item:hover .contact-info h2 {
   opacity: 0.5;
 }
-.contact .contact-container .contact-item:hover .contact-info a {
+#contact .contact-container .contact-item:hover .contact-info a {
   transform: scale(1.05);
   transition: 0.5s;
 }
-.contact .contact-form {
+#contact .contact-form {
   padding-top: 10vh;
 }
-.contact .contact-form form {
+#contact .contact-form form {
   padding: 5vh 0;
 }
 @media (max-width: 768px) {
-  .contact .contact-form form {
+  #contact .contact-form form {
     min-height: 100vh;
   }
 }
-.contact .contact-form form .form-title {
+#contact .contact-form form .form-title {
   margin-bottom: 1rem;
   color: #29323c;
 }
-.contact .contact-form form .form-title h1 {
+#contact .contact-form form .form-title h1 {
   text-transform: capitalize;
   font-family: "Taviraj", serif;
   font-size: 1.8rem;
 }
 @media (min-width: 768px) {
-  .contact .contact-form form .form-title h1 {
+  #contact .contact-form form .form-title h1 {
     font-size: 2rem;
   }
 }
-.contact .contact-form form .form-title p {
+#contact .contact-form form .form-title p {
   font-weight: 500;
 }
-.contact .contact-form form fieldset {
+#contact .contact-form form fieldset {
   margin: 2rem 0 0;
   border: none;
 }
-.contact .contact-form form label {
+#contact .contact-form form label {
   display: block;
   text-transform: capitalize;
   margin-bottom: 0.5rem;
@@ -1427,7 +1459,7 @@ header.hero-header .header-cta {
   font-weight: 400;
   font-family: "Taviraj", serif;
 }
-.contact .contact-form form label input, .contact .contact-form form label textarea {
+#contact .contact-form form label input, #contact .contact-form form label textarea {
   display: block;
   border-radius: 0.25rem;
   padding: 0.5rem;
@@ -1437,22 +1469,22 @@ header.hero-header .header-cta {
   margin-top: 0.25rem;
   font-family: "Montserrat", sans-serif;
 }
-.contact .contact-form form label input::placeholder, .contact .contact-form form label textarea::placeholder {
+#contact .contact-form form label input::placeholder, #contact .contact-form form label textarea::placeholder {
   opacity: 0.5;
   letter-spacing: 0.05rem;
   transition: 0.25s;
 }
-.contact .contact-form form label input:focus::placeholder, .contact .contact-form form label textarea:focus::placeholder {
+#contact .contact-form form label input:focus::placeholder, #contact .contact-form form label textarea:focus::placeholder {
   opacity: 1;
   letter-spacing: normal;
 }
 @media (min-width: 768px) {
-  .contact .contact-form form label input:hover::placeholder, .contact .contact-form form label textarea:hover::placeholder {
+  #contact .contact-form form label input:hover::placeholder, #contact .contact-form form label textarea:hover::placeholder {
     opacity: 1;
     letter-spacing: normal;
   }
 }
-.contact .contact-form form .submit-btn {
+#contact .contact-form form .submit-btn {
   margin-top: 1rem;
   padding: 1rem;
   width: 11rem;
@@ -1470,27 +1502,27 @@ header.hero-header .header-cta {
   text-align: left;
   position: relative;
 }
-.contact .contact-form form .submit-btn:active {
+#contact .contact-form form .submit-btn:active {
   letter-spacing: normal;
   transform: scale(0.97);
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(221, 221, 221, 0.25), 0px 4px 1px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 768px) {
-  .contact .contact-flex-container {
+  #contact .contact-flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 5vw;
   }
-  .contact .contact-flex-container .contact-container {
+  #contact .contact-flex-container .contact-container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .contact .contact-flex-container .contact-form {
+  #contact .contact-flex-container .contact-form {
     width: 100%;
   }
-  .contact .contact-flex-container .contact-form form {
+  #contact .contact-flex-container .contact-form form {
     width: 100%;
   }
 }
