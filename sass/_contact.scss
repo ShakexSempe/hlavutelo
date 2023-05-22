@@ -11,8 +11,8 @@
         @include md {
             // border: 2px solid red;
             margin-top: 10vh;
-            justify-content: space-around;
-            gap: 1rem;
+            // justify-content: space-around;
+            // gap: 1rem;
             // background: none;
         }
         .contact-item {
@@ -28,7 +28,7 @@
             box-shadow: 0 .5rem .5rem #0001;
 
             @include md {
-                flex-grow: 1;
+                // flex-grow: 1;
                 border-radius: $border-radius-sm;
                 border-color: $overlay-blue-dark;
                 padding: 1rem .5rem;

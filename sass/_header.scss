@@ -12,6 +12,7 @@ header {
     padding: 0 5vw;
     @include md {
         height: 8vh;
+        padding: .5rem 5vw;
     }
     display: flex;
     justify-content: space-between;
@@ -34,7 +35,6 @@ header {
         @include md {
             // width: 10rem;
             text-align: left;
-            padding: .5rem 1rem;
         }
         a {
             color: $text-light;
@@ -47,9 +47,6 @@ header {
             span{
                 color: $text-light;
                 font-family: $font-title;
-            }
-            @include md {
-                font-size: 1.15rem;
             }
         }
 
@@ -352,9 +349,7 @@ header {
                 text-transform: capitalize;
 
                 a {
-                    // font-family: $font-title;
-                    // opacity: .7;
-                    letter-spacing: .025rem;
+                    font-size: .85rem;
                     color: $text-light;
                     text-decoration: none;
                     transition: .25s;
@@ -367,6 +362,7 @@ header {
                 .dropdown-btn {
                     // border: 1px solid yellow;
                     height: 100%;
+                    font-size: .85rem;
                     display: grid;
                     place-items: center;
                     color: #fff;
@@ -410,21 +406,21 @@ header {
 
                         a {
                             opacity: 1;
-                            &:nth-child(1){
-                                transition-delay: .25s;
-                            }
-                            &:nth-child(2){
-                                transition-delay: .3s;
-                            }
-                            &:nth-child(3){
-                                transition-delay: .35s;
-                            }
-                            &:nth-child(4){
-                                transition-delay: .4s;
-                            }
-                            &:nth-child(5){
-                                transition-delay: .45s;
-                            }
+                            // &:nth-child(1){
+                            //     transition-delay: .25s;
+                            // }
+                            // &:nth-child(2){
+                            //     transition-delay: .3s;
+                            // }
+                            // &:nth-child(3){
+                            //     transition-delay: .35s;
+                            // }
+                            // &:nth-child(4){
+                            //     transition-delay: .4s;
+                            // }
+                            // &:nth-child(5){
+                            //     transition-delay: .45s;
+                            // }
                         }
                     }
                 }

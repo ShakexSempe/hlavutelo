@@ -339,6 +339,7 @@ header {
 @media (min-width: 768px) {
   header {
     height: 8vh;
+    padding: 0.5rem 5vw;
   }
 }
 header .logo {
@@ -358,7 +359,6 @@ header .logo {
 @media (min-width: 768px) {
   header .logo {
     text-align: left;
-    padding: 0.5rem 1rem;
   }
 }
 header .logo a {
@@ -372,11 +372,6 @@ header .logo a {
 header .logo a span {
   color: #f4f4f4;
   font-family: "Taviraj", serif;
-}
-@media (min-width: 768px) {
-  header .logo a {
-    font-size: 1.15rem;
-  }
 }
 header aside {
   position: absolute;
@@ -610,7 +605,7 @@ header .navbar ul li {
   text-transform: capitalize;
 }
 header .navbar ul li a {
-  letter-spacing: 0.025rem;
+  font-size: 0.85rem;
   color: #f4f4f4;
   text-decoration: none;
   transition: 0.25s;
@@ -618,6 +613,7 @@ header .navbar ul li a {
 }
 header .navbar ul .dropdown .dropdown-btn {
   height: 100%;
+  font-size: 0.85rem;
   display: grid;
   place-items: center;
   color: #fff;
@@ -656,21 +652,6 @@ header .navbar ul .dropdown:hover .dropdown-content {
 }
 header .navbar ul .dropdown:hover .dropdown-content a {
   opacity: 1;
-}
-header .navbar ul .dropdown:hover .dropdown-content a:nth-child(1) {
-  transition-delay: 0.25s;
-}
-header .navbar ul .dropdown:hover .dropdown-content a:nth-child(2) {
-  transition-delay: 0.3s;
-}
-header .navbar ul .dropdown:hover .dropdown-content a:nth-child(3) {
-  transition-delay: 0.35s;
-}
-header .navbar ul .dropdown:hover .dropdown-content a:nth-child(4) {
-  transition-delay: 0.4s;
-}
-header .navbar ul .dropdown:hover .dropdown-content a:nth-child(5) {
-  transition-delay: 0.45s;
 }
 header .header-cta {
   transform: translateY(0);
@@ -1149,7 +1130,7 @@ header.hero-header .header-cta {
 }
 .hero .banner .title p span {
   display: block;
-  opacity: 0.8;
+  opacity: 0.7;
   margin: 0.25rem 0 1rem;
   font-size: 0.85rem;
 }
@@ -1307,8 +1288,6 @@ header.hero-header .header-cta {
 @media (min-width: 768px) {
   #contact .contact-container {
     margin-top: 10vh;
-    justify-content: space-around;
-    gap: 1rem;
   }
 }
 #contact .contact-container .contact-item {
@@ -1323,7 +1302,6 @@ header.hero-header .header-cta {
 }
 @media (min-width: 768px) {
   #contact .contact-container .contact-item {
-    flex-grow: 1;
     border-radius: 0.5rem;
     border-color: #29323c;
     padding: 1rem 0.5rem;
