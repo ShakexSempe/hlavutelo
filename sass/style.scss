@@ -53,16 +53,16 @@ body {
         }
     }
     main {
-        min-height: 100vh;
         width: 100%;
-        border: 2px solid white;
         border: none;
+        padding-top: 5vh;
 
         section {
             min-height: 100vh;
             width: 100%;
             padding: 10vh 5vw;
             background: $background-secondary;
+            // border: 2px solid red;
             // border-bottom: .15rem dashed rgba(0, 0, 0, 0.247);
             position: relative;
             @include md {
@@ -88,12 +88,12 @@ body {
                     border-radius: $border-radius-sm;
                     text-transform: capitalize;
                     font-family: $font-title;
-                    font-size: 2.5rem;
+                    font-size: 2.25rem;
                     color: $overlay-blue-dark;
                     color: $brand-logo;
                     // text-shadow: 1px 0 2px #fff;
                     line-height: 1.1;
-                    font-weight: 600;
+                    font-weight: 900;
                     padding: 0 .5rem;
                     width: 7rem;
                     width: max-content;
@@ -116,7 +116,7 @@ body {
                     background-color: $overlay-blue-light;
                     // background-color: $brand-logo;
                     z-index: -1;
-                    opacity: .4;
+                    opacity: .3;
                     transition: 1s;
                     @include md {
                         width: 10%;
@@ -135,7 +135,7 @@ body {
                         &::before {
                             transform: rotate(45deg) scale(.8);
                             border-radius: $border-radius-md;
-                            opacity: .2;
+                            opacity: .1;
                         }
                     }
                 }
