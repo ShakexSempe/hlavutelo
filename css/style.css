@@ -204,7 +204,7 @@
   bottom: 0;
   height: auto;
   width: 100%;
-  padding: 0.5rem 5vw;
+  padding: 0.25rem 5vw;
   background: #0a0c0f;
   background: linear-gradient(0deg, #0a0c0f, #20262e);
   display: flex;
@@ -246,7 +246,7 @@
   text-decoration: none;
   font-size: 1rem;
   color: #f4f4f4;
-  padding: 0.25rem 1rem;
+  padding: 0.125rem 1rem;
   cursor: default;
 }
 .footer-nav .item a i {
@@ -345,10 +345,10 @@ header {
 header .logo {
   background: linear-gradient(90deg, #000 20%, #20262e);
   background: #20262e;
-  border: 0.105rem solid rgba(234, 210, 161, 0.4);
   border: 0.105rem solid rgba(255, 255, 255, 0.2);
+  border: 0.105rem solid rgba(234, 210, 161, 0.4);
   padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   overflow: hidden;
   width: 7rem;
   width: max-content;
@@ -362,9 +362,8 @@ header .logo {
   }
 }
 header .logo a {
-  color: #f4f4f4;
   color: #ead2a1;
-  text-transform: uppercase;
+  color: #f4f4f4;
   text-transform: capitalize;
   font-size: 1rem;
   text-decoration: none;
@@ -657,7 +656,7 @@ header .header-cta {
   transform: translateY(0);
   transition: 0.5s;
   background-color: #f4f4f4;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   border: 0.105rem solid rgba(234, 210, 161, 0.4);
   text-align: center;
 }

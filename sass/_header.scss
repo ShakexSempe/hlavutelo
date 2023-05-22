@@ -22,10 +22,10 @@ header {
     .logo {
         background: linear-gradient( 90deg, #000 20%, $overlay-blue-darker);
         background: $overlay-blue-darker;
-        border: $border-brand-sm;
         border: $border-light-sm;
+        border: $border-brand-sm;
         padding: .25rem .5rem;
-        border-radius: $border-radius-sm;
+        border-radius: $border-radius-xsm;
         overflow: hidden;
         width: 7rem;
         width: max-content;
@@ -37,9 +37,8 @@ header {
             text-align: left;
         }
         a {
-            color: $text-light;
             color: $span-gold;
-            text-transform: uppercase;
+            color: $text-light;
             text-transform: capitalize;
             font-size: 1rem;
             text-decoration: none;
@@ -433,7 +432,7 @@ header {
         transition: .5s;
         // width: 10rem;
         background-color: #f4f4f4;
-        border-radius: $border-radius-sm;
+        border-radius: $border-radius-xsm;
         border: $border-brand-sm;
         text-align: center;
         a {
