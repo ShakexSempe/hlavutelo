@@ -55,18 +55,18 @@ body {
     main {
         width: 100%;
         border: none;
-        padding-top: 5vh;
+        // padding-top: 5vh;
 
         section {
             min-height: 100vh;
             width: 100%;
-            padding: 10vh 5vw;
+            padding: 15vh 5vw 10vh;
             background: $background-secondary;
             // border: 2px solid red;
             // border-bottom: .15rem dashed rgba(0, 0, 0, 0.247);
             position: relative;
             @include md {
-                padding: 10vh 5vw;
+                padding: 15vh 5vw;
             }
 
             .section-title {
@@ -94,7 +94,7 @@ body {
                     // text-shadow: 1px 0 2px #fff;
                     line-height: 1.1;
                     font-weight: 900;
-                    padding: 0 .5rem;
+                    // padding: 0 .5rem;
                     width: 7rem;
                     width: max-content;
                     transition: .5s;
