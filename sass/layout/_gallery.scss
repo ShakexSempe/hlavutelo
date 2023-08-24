@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 .gallery {
     // border: 2px solid red;
     width: 100%;
@@ -11,22 +13,22 @@
         gap: .5rem;
         position: sticky;
         top: 7vh;
-        background: $background-secondary;
-        @include md {
+        background: abstracts.$background-secondary;
+        @include abstracts.md {
             padding: 1rem 0;
         }
         // BUTTONS
         .filter-btn {
             font-size: .7rem;
-            @include md {
+            @include abstracts.md {
                 font-size: 1rem;
             }
             padding: .25rem .5rem;
-            border-radius: $border-radius-sm;
-            border: $border-dark-sm;
+            border-radius: abstracts.$border-radius-sm;
+            border: abstracts.$border-dark-sm;
             border: none;
             text-transform: capitalize;
-            background: $btn-filter;
+            background: abstracts.$btn-filter;
             cursor: pointer;
             transition: .25s;
             display: block;
@@ -40,22 +42,22 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: $border-radius-sm;
+                border-radius: abstracts.$border-radius-sm;
                 transition: .25s;
                 z-index: -1;
             }
             &::before {
-                background: $btn-filter;
+                background: abstracts.$btn-filter;
             }
             &::after {
                 opacity: 0;
-                background: $btn-filter-hover;
-                background: $btn-brand-hover;
+                background: abstracts.$btn-filter-hover;
+                background: abstracts.$btn-brand-hover;
             }
 
             &:hover, &:active, &:focus {
                     transform: scale(.95);
-                    color: $brand;
+                    color: abstracts.$brand;
                     &::before {
                         opacity: 0;
                     }
@@ -76,10 +78,10 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 10vh;
-        @include sm {
+        @include abstracts.sm {
             grid-template-columns: 1fr 1fr;
         }
-        @include md {
+        @include abstracts.md {
             grid-template-columns: 1fr 1fr 1fr;
         }
         .gallery-item {
@@ -87,19 +89,19 @@
             width: 100%;
             
             img {
-                border-radius: $border-radius-sm;
+                border-radius: abstracts.$border-radius-sm;
                 width: 100%;
                 height: auto;
-                @include sm {
+                @include abstracts.sm {
                     height: 50vh;
                 }
-                @include lg {
+                @include abstracts.lg {
                     height: 70vh;
                 }
             }
 
             .item-info {
-                @include md {
+                @include abstracts.md {
                     text-align: center;
                 }
                 .item-title {

@@ -1,16 +1,16 @@
-@import 'mixin';
+@use '../abstracts';
+
 header {
     // border: 1px solid red;
     position: fixed;
     top: 0;
     background: #6e706d;
-    background: $overlay-blue-dark;
+    background: abstracts.$overlay-blue-dark;
     height: 7vh;
     width: 100vw;
-    margin: 0;
     z-index: 10;
     padding: 0 5vw;
-    @include md {
+    @include abstracts.md {
         height: 8vh;
         padding: .5rem 5vw;
     }
@@ -20,32 +20,32 @@ header {
     transition: .5s;
 
     .logo {
-        background: linear-gradient( 90deg, #000 20%, $overlay-blue-darker);
-        background: $overlay-blue-darker;
-        border: $border-light-sm;
-        border: $border-brand-sm;
+        background: linear-gradient( 90deg, #000 20%, abstracts.$overlay-blue-darker);
+        background: abstracts.$overlay-blue-darker;
+        border: abstracts.$border-light-sm;
+        border: abstracts.$border-brand-sm;
         padding: .25rem .5rem;
-        border-radius: $border-radius-xsm;
+        border-radius: abstracts.$border-radius-xsm;
         overflow: hidden;
         width: 7rem;
         width: max-content;
         transition: .5s;
         text-align: left;
         transform: translateY(0vh);
-        @include md {
+        @include abstracts.md {
             // width: 10rem;
             text-align: left;
         }
         a {
-            color: $span-gold;
-            color: $text-light;
+            color: abstracts.$span-gold;
+            color: abstracts.$text-light;
             text-transform: capitalize;
             font-size: 1rem;
             text-decoration: none;
-            // font-family: $font-title;
+            // font-family: abstracts.$font-title;
             span{
-                color: $text-light;
-                font-family: $font-title;
+                color: abstracts.$text-light;
+                font-family: abstracts.$font-title;
             }
         }
 
@@ -53,18 +53,17 @@ header {
 
     // MOBILE ASIDE
     aside {
-        @include lg {
+        @include abstracts.lg {
             display: none;
         }
 
         position: absolute;
-        // background-color: $overlay-blue-darker;
-        background: $overlay-dark;
+        // background-color: abstracts.$overlay-blue-darker;
+        background: abstracts.$overlay-dark;
         width: 100%;
         height: 100vh;
         top: 7vh;
         left: 100vw;
-        // border: 2px solid red;
         overflow: hidden;
         padding: 5vh 0;
         transition: .5s;
@@ -75,8 +74,8 @@ header {
             width: 90%;
 
             li {
-                // border-bottom: $border-brand-sm;
-                // border-radius: $border-radius-sm;
+                // border-bottom: abstracts.$border-brand-sm;
+                // border-radius: abstracts.$border-radius-sm;
                 display: flex;
                 // height: 100%;
                 transform: translateX(5rem);
@@ -99,7 +98,7 @@ header {
                     i {
                         float: right;
                         margin: 0 auto;
-                        color: $brand;
+                        color: abstracts.$brand;
                         // border: 1px solid yellow;
                         // width: 2rem;
                     }
@@ -108,7 +107,7 @@ header {
                 &.aside-dropdown {
                     // border: 1px solid blue;
                     border: none;
-                    border-bottom: 1px solid $brand;
+                    border-bottom: 1px solid abstracts.$brand;
                     // padding: 0 0 0rem 0;
                     position: relative;
                     display: flex;
@@ -118,8 +117,8 @@ header {
 
                     button {
                         text-transform: capitalize;
-                        font-family: $font-content;
-                        color: $text-light;
+                        font-family: abstracts.$font-content;
+                        color: abstracts.$text-light;
                         font-size: 1rem;
                         background: transparent;
                         border: none;
@@ -135,7 +134,7 @@ header {
                             // width: 3rem;
                             // border: 1px solid yellow;
                             transition: .25s;
-                            color: $brand;
+                            color: abstracts.$brand;
                         }
                     }
 
@@ -149,10 +148,10 @@ header {
                         a {
                             text-transform: capitalize;
                             text-decoration: none;
-                            color: $brand;
+                            color: abstracts.$brand;
                             margin-left: 1rem;
                             padding: .5rem  .25rem;
-                            border-radius: $border-radius-sm;
+                            border-radius: abstracts.$border-radius-sm;
                             opacity: 0;
                             transform: translateX(1rem);
                             transition: .5s;
@@ -162,7 +161,7 @@ header {
                     &:hover {
                         border-color: #fff3;
                         border-radius: 0;
-                        border-radius: $border-radius-sm;
+                        border-radius: abstracts.$border-radius-sm;
                         transition: border .5s;
                         button {
                             i {
@@ -205,7 +204,7 @@ header {
             gap: 1.5rem;
 
             a {
-                color: $span-gold;
+                color: abstracts.$span-gold;
                 font-size: 1rem;
                 text-decoration: none;
                 letter-spacing: .025rem;
@@ -217,7 +216,7 @@ header {
                     width: 1.5rem;
                     font-size: 1.25em;
                     padding-bottom: .25rem;
-                    color: $text-light;
+                    color: abstracts.$text-light;
                     transform: translateX(-1rem);
                     // opacity: 0;
                     transition: .5s;
@@ -333,7 +332,7 @@ header {
         
         ul {
             // border: 1px solid yellow;
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -349,7 +348,7 @@ header {
 
                 a {
                     font-size: .85rem;
-                    color: $text-light;
+                    color: abstracts.$text-light;
                     text-decoration: none;
                     transition: .25s;
                     position: relative;
@@ -371,7 +370,7 @@ header {
                 }
                 .dropdown-content {
                     // border: 1px solid red;
-                    background: $overlay-footer-nav;
+                    background: abstracts.$overlay-footer-nav;
                     position: absolute;
                     top: 6vh;
                     left: 0;
@@ -390,7 +389,7 @@ header {
                         transition: .25s;
                         opacity: 0;
                         &:hover {
-                            color: $brand;
+                            color: abstracts.$brand;
                             transition: .1s;
                         }
                     }
@@ -427,22 +426,22 @@ header {
         }
     }
     .header-cta {
-        // border: 2px solid $overlay-blue-dark;
+        // border: 2px solid abstracts.$overlay-blue-dark;
         transform: translateY(0);
         transition: .5s;
         // width: 10rem;
         background-color: #f4f4f4;
-        border-radius: $border-radius-xsm;
-        border: $border-brand-sm;
+        border-radius: abstracts.$border-radius-xsm;
+        border: abstracts.$border-brand-sm;
         text-align: center;
         a {
             width: 100%;
             height: 100%;
             padding: .25rem 1rem;
             text-transform: capitalize;
-            color: $text-dark;
+            color: abstracts.$text-dark;
             text-decoration: none;
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             font-weight: 500;
             // border: 1px solid red;
             display: block;
@@ -459,12 +458,12 @@ header {
             right: 15vw;
             width: auto;
             // padding: 0 .5rem;
-            background: $btn-overlay-light;
+            background: abstracts.$btn-overlay-light;
             a {
                 // padding: .25rem .5rem;
                 width: 100%;
                 font-size: .8rem;
-                color: $text-light;
+                color: abstracts.$text-light;
             }
         }
         
@@ -472,15 +471,15 @@ header {
             &:hover {
                 // transform: scale(.98);
                 transition: .25s;
-                @include md {
-                    background: $overlay-blue-dark;
+                @include abstracts.md {
+                    background: abstracts.$overlay-blue-dark;
                 }
                 a {
                     transition: .25s;
 
                     i {
                 transition: .25s;
-                color: $brand;
+                color: abstracts.$brand;
                     }
                 }
             }
@@ -488,7 +487,7 @@ header {
     }
     // ASIDE ACTIVE HEADER
     &.aside-header {
-        background: $overlay-blue-dark;
+        background: abstracts.$overlay-blue-dark;
         .logo {
             transform: translateY(0);
         }
@@ -499,13 +498,13 @@ header {
         .logo {
             transform: translateY(-10vh);
         }
-        @include md {
+        @include abstracts.md {
             background: transparent;
             .navbar {
                 ul {
                     li {
                         a {
-                        color: $text-dark;
+                        color: abstracts.$text-dark;
                         }
                     }
                     .dropdown {
@@ -514,7 +513,7 @@ header {
                         }
                         .dropdown-content {
                             a {
-                            color: $text-light;
+                            color: abstracts.$text-light;
                             }
                         }
                     }
@@ -523,7 +522,7 @@ header {
         }
         .hamburger {
             // .bar {
-            //     background: $overlay-blue-dark;
+            //     background: abstracts.$overlay-blue-dark;
             // }
         }
         .header-cta {

@@ -1,29 +1,27 @@
-.services {
-    * {
-        // border: 1px solid #000a;
+@use '../abstracts';
 
-    }
+.services {
     .services-container {
         // border: 2px solid blue;
 
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        @include md {
+        @include abstracts.md {
             flex-direction: row;
         }
 
         .service-item {
             // border: 1px solid red;
             // background: #f4f4f4;
-            // border-bottom: 2px solid $overlay-blue-light;
+            // border-bottom: 2px solid abstracts.$overlay-blue-light;
             position: relative;
             flex-basis: 50%;
             margin: 1rem 0;
-            color: $overlay-blue-dark;
-            @include md {
+            color: abstracts.$overlay-blue-dark;
+            @include abstracts.md {
                 background:linear-gradient(0deg, #f4f4f4, #fff);
-                border-radius: $border-radius-md;
+                border-radius: abstracts.$border-radius-md;
                 border: 1px solid rgba(72, 85, 99, .15);
                 box-shadow: 0rem .25rem .35rem rgba(72, 85, 99, .15);
                 padding: .5rem;
@@ -37,7 +35,7 @@
                     width: 5rem;
                     height: 5rem;
                     overflow: hidden;
-                    @include md {
+                    @include abstracts.md {
                         margin: 1rem auto;
                     }
                     img {
@@ -47,7 +45,7 @@
 
                 .service-title {
                     // border: 1px solid #000a;
-                    font-family: $font-title;
+                    font-family: abstracts.$font-title;
 
                     h2 {
                         text-transform: capitalize;
@@ -57,7 +55,7 @@
                     }
 
                     p {
-                        color: $overlay-blue-light;
+                        color: abstracts.$overlay-blue-light;
                     }
 
                 }
@@ -70,18 +68,18 @@
                     line-height: 1.5;
                     font-weight: 500;
                     color: #fff;
-                    background: $overlay-blue-dark;
+                    background: abstracts.$overlay-blue-dark;
                     padding: .5rem;
-                    border-radius: $border-radius-sm;
+                    border-radius: abstracts.$border-radius-sm;
                     height: auto;
 
                     // INCLUDE HEIGHT TO LEVEL UL
-                    @include md {
+                    @include abstracts.md {
                         height: 20vh;
                         display: grid;
                         place-items: center;
                     }
-                    @include xlg {
+                    @include abstracts.xlg {
                         height: 15vh;
                     }
                 }
@@ -89,13 +87,13 @@
                 ol {
                     margin: .5rem;
                     // border: 2px solid yellow;
-                    // background: $overlay-blue-dark;
+                    // background: abstracts.$overlay-blue-dark;
                     padding: 0 .5rem;
 
                     li {
                         padding: .25rem;
                         text-transform: capitalize;
-                        border-radius: $border-radius-sm;
+                        border-radius: abstracts.$border-radius-sm;
                         // color: #f4f4f4;
                         &::marker {
                             color: #000a;

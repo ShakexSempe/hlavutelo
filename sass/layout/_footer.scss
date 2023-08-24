@@ -1,16 +1,17 @@
+@use '../abstracts';
+
 footer {
     height: 100vh;
     height: 100vh;
     width: 100%;
-    background: $overlay-dark;
-    background: $overlay-footer;
+    background: abstracts.$overlay-footer;
     // background: #fff;
     padding: 7vh 5vw 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    @include md {
+    @include abstracts.md {
         height: 50vh;
         flex-direction: row;
         align-items: center;
@@ -24,18 +25,18 @@ footer {
         width: auto;
         width: auto;
         flex-basis: 50%;
-        // border-radius: $border-radius-sm;
+        // border-radius: abstracts.$border-radius-sm;
         // border: 1px solid red;
         
         img {
             width: 100%;
             height: 100%;
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             object-position: center;
             // border: 1px solid red;
             object-fit: contain;
         }
-        @include md {
+        @include abstracts.md {
             // width: auto;
             // border: 1px solid red;
             img {
@@ -46,7 +47,7 @@ footer {
         }
     }
     .copyright {
-        // border: 2px solid $brand;
+        // border: 2px solid abstracts.$brand;
         border-radius: 1rem;
         color: #fff;
         height: 100%;
@@ -67,7 +68,7 @@ footer {
 
             a {
                 font-size: inherit;
-                color: $brand;
+                color: abstracts.$brand;
                 text-decoration: none;
             }
         }

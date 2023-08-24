@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 .projects {
     // border: 2px solid red;
 
@@ -9,9 +11,9 @@
             text-transform: capitalize;
             position: sticky;
             top: 7vh;
-            background: $background-secondary;
-            color: $overlay-blue-darker;
-            font-family: $font-title;
+            background: abstracts.$background-secondary;
+            color: abstracts.$overlay-blue-darker;
+            font-family: abstracts.$font-title;
             padding: .5rem 0;
             font-size: 1.25rem;
             transition: 1.5s;
@@ -20,11 +22,11 @@
             display: grid;
             gap: 5vh;
             transition: 1.5s;
-            @include sm {
+            @include abstracts.sm {
                 gap: .5rem;
                 grid-template-columns: 1fr 1fr;
             }
-            @include lg {
+            @include abstracts.lg {
                 grid-template-columns: 1fr 1fr 1fr;
             }
             padding: 5vh 0;
@@ -42,7 +44,7 @@
 
                     figcaption {
                         text-transform: capitalize;
-                        font-family: $font-title;
+                        font-family: abstracts.$font-title;
                         margin: .5rem;
                         transition: 1.5s;
                     }

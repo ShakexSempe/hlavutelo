@@ -1,3 +1,9 @@
+// BREAK POINTS
+$screen-xsm-max: 390px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 820px;
+$screen-xlg-min: 1024px;
 // EXTRA SMALL DEVICES 
 @mixin xsm {
     @media (max-width: #{$screen-xsm-max}) {
@@ -47,3 +53,4 @@
     grid-gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
 }
+
