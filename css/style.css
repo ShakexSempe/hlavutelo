@@ -138,106 +138,6 @@ main .section-pad figure img {
   box-sizing: border-box;
 }
 
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(0deg, #20262e, #6e706d);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.25rem 5vw;
-  transform: translateY(15vh);
-  transition: 1s;
-}
-@media (min-width: 820px) {
-  .bottom-nav {
-    display: none;
-    height: 7vh;
-  }
-}
-.bottom-nav .link-item {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  opacity: 0;
-  transition: 0.25s;
-  position: relative;
-  transform: translateY(1rem);
-}
-.bottom-nav .link-item a {
-  color: #f4f4f4;
-  font-size: 0.75rem;
-  display: grid;
-  place-content: center;
-  place-items: center;
-  padding: 0.5rem 2rem;
-  border-radius: 1rem;
-  cursor: default;
-  position: relative;
-  transition: 0.25s;
-}
-.bottom-nav .link-item a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #29323c;
-  border-radius: 1rem;
-  z-index: -1;
-  transition: 0.125s;
-  transform: scaleX(0.5);
-  opacity: 0;
-}
-.bottom-nav .link-item a i {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #ead2a1;
-  transition: 0.125s;
-}
-.bottom-nav .link-item a:active {
-  transition: 0.25s;
-}
-.bottom-nav .link-item a:active::after {
-  transform: scaleX(1);
-  transition: 0.125s;
-  opacity: 0.5;
-}
-.bottom-nav .link-item a:hover i {
-  color: #f4f4f4;
-}
-.bottom-nav .link-item a:hover::after {
-  animation: click 0.25s;
-}
-@keyframes click {
-  0% {
-    transform: scaleX(0.5);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: scaleX(1);
-  }
-  80% {
-    opacity: 0.5;
-    transform: scaleX(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scaleX(1);
-  }
-}
-.bottom-nav.active-bottom-nav {
-  transform: translateY(0vh);
-}
-.bottom-nav.active-bottom-nav .link-item {
-  transform: translateY(0);
-  opacity: 1;
-  transition: 0.5s;
-}
-
 .skip-link {
   background: #485563;
   position: fixed;
@@ -1354,6 +1254,112 @@ header.hero-header .header-cta {
   margin: 0.25rem 0 1rem;
   font-size: 0.85rem;
 }
+.company-info {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f4f4;
+  position: relative;
+  isolation: isolate;
+}
+.company-info figure {
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 7vh;
+  z-index: -1;
+}
+.company-info figure img {
+  width: 100%;
+  height: 100%;
+}
+.company-info article {
+  height: 100vh;
+  padding: 10vh 5vw 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+@media (min-width: 768px) {
+  .company-info article {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    top: 10vh;
+    padding: 0 0 0 10vw;
+    background-color: transparent;
+  }
+}
+.company-info article .article-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  color: #29323c;
+}
+.company-info article .article-item h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .company-info article .article-item h3 {
+    font-size: 1.8rem;
+  }
+}
+.company-info article .article-item p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.company-info article .article-item ul li {
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+}
+.company-info article .article-item ul li::marker {
+  color: #0003;
+}
+@media (min-width: 768px) {
+  .company-info article .article-item ul li:nth-child(even) {
+    float: right;
+    text-align: right;
+  }
+}
+.company-info article .article-item.io-item h3 {
+  color: #ead2a1;
+  transition: 1.5s;
+}
+.company-info article .article-item.io-item p {
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: 1.5s;
+  transition-delay: 0.5s;
+}
+.company-info article .article-item.io-item ul li {
+  letter-spacing: 0.05rem;
+  opacity: 0;
+  transition: 1.5s;
+  transition-delay: 0.5s;
+}
+.company-info article .article-item.active-item h3 {
+  color: inherit;
+}
+.company-info article .article-item.active-item p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.company-info article .article-item.active-item ul li {
+  letter-spacing: normal;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .company-info {
+    background-image: url(../img/fatemeh-alboghbysh-_Izso8ssqbo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+  }
+  .company-info figure {
+    display: none;
+  }
+}
+
 .projects .projects-container {
   padding: 5vh 0;
 }

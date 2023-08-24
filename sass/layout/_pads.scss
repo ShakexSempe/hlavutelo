@@ -1,3 +1,5 @@
+@use '../abstracts';
+
 .company-info {
     // border: 2px solid red;
     width: 100%;
@@ -24,7 +26,7 @@
         padding: 10vh 5vw 0;
         background-color: rgba(0, 0, 0, 0.1);
         z-index: 5;
-        @include md {
+        @include abstracts.md {
             position: absolute;
             top: 5vh;
             left: 5vw;
@@ -36,15 +38,15 @@
             // border: 1px solid red;
             margin-bottom: 1rem;
             padding: .5rem;
-            border-radius: $border-radius-sm;
+            border-radius: abstracts.$border-radius-sm;
             text-transform: capitalize;
-            color: $overlay-blue-dark;
+            color: abstracts.$overlay-blue-dark;
 
             h3 {
                 font-weight: 600;
                 font-size: 1.25rem;
 
-                @include md {
+                @include abstracts.md {
                     font-size: 1.8rem;
                 }
             }
@@ -64,7 +66,7 @@
                     padding-top: .5rem;
                     font-size: .95rem;
 
-                    @include md {
+                    @include abstracts.md {
                         &:nth-child(even) {
                             float: right;
                             text-align: right;
@@ -76,7 +78,7 @@
             // IO CLASS
             &.io-item {
                 h3 {
-                    color: $brand;
+                    color: abstracts.$brand;
                     transition: 1.5s;
                 }
                 p {
@@ -115,7 +117,7 @@
     }
 
     // DESKTOP
-    @include md {
+    @include abstracts.md {
         figure {
         display: none;
         }
