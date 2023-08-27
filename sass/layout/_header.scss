@@ -1,10 +1,8 @@
 @use '../abstracts';
 
 header {
-    // border: 1px solid red;
     position: fixed;
     top: 0;
-    background: #6e706d;
     background: abstracts.$overlay-blue-dark;
     height: 7vh;
     width: 100vw;
@@ -58,7 +56,6 @@ header {
         }
 
         position: absolute;
-        // background-color: abstracts.$overlay-blue-darker;
         background: abstracts.$overlay-dark;
         width: 100%;
         height: 100vh;
