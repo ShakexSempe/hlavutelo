@@ -48,11 +48,11 @@
 
 <body>
   <!-- LOADER -->
-  <div class="loader_bg">
+  <!-- <div class="loader_bg">
     <div class="loader">
       <div class="circle"></div>
     </div>
-  </div>
+  </div> -->
   <div class="container" id="container">
     <!-- HEADER -->
     <header id="header" class="header">
@@ -121,6 +121,16 @@
       <figure class="hero-logo">
         <img src="img/logo.png" alt="Hlavutelo logo">
       </figure>
+      <!-- HERO BG IMAGE -->
+      <picture class="hero-image">
+        <source
+          srcset="img/hero_1600.jpg"
+          media="(min-width: 820.1px)"
+          width="1920"
+          height="1359"
+        >
+        <img src="img/hero_450.jpg" width="450" height="600" alt="Laptop">
+      </picture>
       <div class="banner">
         <div class="title">
           <h1>We help <br> build homes</h1>
@@ -133,6 +143,7 @@
       </div>
 
     </div>
+    <!-- MAIN -->
     <main id="main" class="main">
       <!-- INDOOR STONE CLADDING SECTION -->
       <section id="indoor-stone" class="about">
@@ -500,6 +511,7 @@
       </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer id="footer" class="footer">
       <figure class="logo">
         <img src="img/logo.png" alt="Hlavutelo Trading & Projects Logo">
