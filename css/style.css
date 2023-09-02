@@ -27,13 +27,7 @@ body {
   left: 0;
 }
 
-main {
-  width: 100%;
-  border: none;
-}
 main section {
-  min-height: 100vh;
-  width: 100%;
   padding: 15vh 5vw 10vh;
   background: #fafafa;
   position: relative;
@@ -45,23 +39,21 @@ main section {
 }
 main section .section-title {
   position: relative;
-  background: #fafafa;
-  background: transparent;
   z-index: 1;
-  width: 80%;
+  margin-bottom: 5vh;
+}
+@media (min-width: 576px) {
+  main section .section-title {
+    margin-bottom: 15vh;
+  }
 }
 main section .section-title h2 {
-  border: 0.105rem solid rgba(0, 0, 0, 0.7);
-  border-color: transparent;
-  border-radius: 0.5rem;
   text-transform: capitalize;
   font-family: "Taviraj", serif;
-  font-size: 2.25rem;
-  color: #29323c;
+  font-size: 2rem;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   color: #463720;
-  line-height: 1.1;
   font-weight: 900;
-  width: 7rem;
   width: max-content;
   transition: 0.5s;
   isolation: isolate;
@@ -88,11 +80,6 @@ main section .section-title h2::before {
 @media (min-width: 768px) {
   main section .section-title h2::before {
     width: 10%;
-  }
-}
-@media (min-width: 576px) {
-  main section .section-title h2 {
-    font-size: 2.5rem;
   }
 }
 main section .section-title.active-title h2 {
@@ -185,6 +172,7 @@ main .section-pad figure img {
 
 /* end of progress bar*/
 .about .flex-container {
+  width: 100%;
   margin: 10vh auto 5vh;
   display: flex;
   flex-direction: column;
@@ -197,42 +185,35 @@ main .section-pad figure img {
   .about .flex-container {
     flex-direction: row;
     margin: 5vh auto 10vh;
+    align-items: start;
+    justify-content: space-between;
   }
 }
 .about .flex-container .slogan {
   flex-basis: 50%;
-  color: #29323c;
   text-transform: capitalize;
-  overflow: hidden;
-}
-@media (min-width: 768px) {
-  .about .flex-container .slogan {
-    padding: 10vh 1rem 5vh;
-  }
-}
-.about .flex-container .slogan h3 {
-  font-size: 1rem;
-  font-family: "Taviraj", serif;
-  color: #485563;
-}
-@media (min-width: 768px) {
-  .about .flex-container .slogan h3 {
-    font-size: 1.5rem;
-  }
 }
 .about .flex-container .slogan .slogan-p {
+  color: #29323c;
   text-transform: capitalize;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: 600;
+  margin-bottom: 1rem;
 }
-@media (min-width: 768px) {
-  .about .flex-container .slogan .slogan-p {
-    font-size: 2.25rem;
-  }
+.about .flex-container .slogan h3 {
+  color: #485563;
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 .about .flex-container .slogan p {
-  margin: 1rem 0;
+  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  margin: 0.5rem 0;
   text-transform: none;
+  line-height: 1.6;
+  max-width: 450px;
+  color: #485563;
 }
 .about .flex-container .slogan p::after {
   content: ".";
@@ -750,7 +731,7 @@ header {
   top: 0;
   background: #29323c;
   height: 7vh;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
   padding: 0 5vw;
   display: flex;

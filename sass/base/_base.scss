@@ -32,17 +32,10 @@ body {
     }
 }
 main {
-    width: 100%;
-    border: none;
-    // padding-top: 5vh;
 
     section {
-        min-height: 100vh;
-        width: 100%;
         padding: 15vh 5vw 10vh;
         background: abstracts.$background-secondary;
-        // border: 2px solid red;
-        // border-bottom: .15rem dashed rgba(0, 0, 0, 0.247);
         position: relative;
         @include abstracts.md {
             padding: 15vh 5vw;
@@ -50,67 +43,53 @@ main {
 
         .section-title {
             position: relative;
-            // position: sticky;
-            // top: 7vh;
-            background: abstracts.$background-secondary;
-            background: transparent;
             z-index: 1;
-            // width = 80% to remove from top btn overlap
-            width: 80%;
-            // overflow: hidden;
-            @include abstracts.md {
-                // top: 9vh;
+            margin-bottom: 5vh;
+            @include abstracts.sm {
+                margin-bottom: 15vh;
             }
+
             h2 {
-                border: abstracts.$border-dark-sm;
-                border-color: transparent;
-                border-radius: abstracts.$border-radius-sm;
                 text-transform: capitalize;
                 font-family: abstracts.$font-title;
-                font-size: 2.25rem;
-                color: abstracts.$overlay-blue-dark;
+                font-size: 2rem;
+                font-size: clamp(2rem, 5vw, 2.8rem);
                 color: abstracts.$brand-logo;
-                // text-shadow: 1px 0 2px #fff;
-                line-height: 1.1;
                 font-weight: 900;
-                // padding: 0 .5rem;
-                width: 7rem;
                 width: max-content;
                 transition: .5s;
                 isolation: isolate;
                 position: relative;
+
                 span {
                     position: absolute;
                     transform: scale(.5);
                     left: .5rem;
                     top: 2rem;
                 }
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 5vw;
-                width: 20%;
-                height: 100%;
-                background-color: abstracts.$overlay-blue-light;
-                // background-color: abstracts.$brand-logo;
-                z-index: -1;
-                opacity: .3;
-                transition: 1s;
-                @include abstracts.md {
-                    width: 10%;
-                    // left: 0;
-                }
-            }
-                @include abstracts.sm {
-                    // width: 10rem;
-                    font-size: 2.5rem;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 5vw;
+                    width: 20%;
+                    height: 100%;
+                    background-color: abstracts.$overlay-blue-light;
+                    z-index: -1;
+                    opacity: .3;
+                    transition: 1s;
+
+                    @include abstracts.md {
+                        width: 10%;
+                    }
                 }
             }
 
             &.active-title {
                 h2 {
                     opacity: .8;
+
                     &::before {
                         transform: rotate(45deg) scale(.8);
                         border-radius: abstracts.$border-radius-md;
